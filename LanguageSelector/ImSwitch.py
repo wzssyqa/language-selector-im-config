@@ -29,7 +29,9 @@ class ImSwitch(object):
     
     def enabledForLocale(self, locale):
         " check if we have a config for this specifc locale (e.g. ja_JP) "
-        return False
+        if os.path.exists('~/.xinputrc'):
+        	os.unlink('~/.xinputrc')
+        return True
 
     def enable(self, locale):
         " enable input methods for locale"
@@ -44,11 +46,19 @@ class ImSwitch(object):
 
     def getInputMethodForLocale(self, locale):
         """ im-config doesn't support it. """
+        if os.path.exists('~/.xinputrc'):
+        	progress=os.popen("grep 'run_im' ~/.xinputrc | awk -F ' ' '{print $2}'")
+        	return progress.read().rstrip()
+        else:
+        	return os.path.basename(os.path.realpath(self.global_confdir+locale))
         return None
         
     def setInputMethodForLocale(self, im, locale):
         """ im-config doesn't support it. """
-        pass
+        f=open('~/.xinputrc','w')
+        f.write('# Generate by Language-Selector, See im-config(8) for more information.\n')
+        f.write('run_im '+im+'\n')
+        return True
     
     def getAvailableInputMethods(self):
         """ return the input methods available via im-config """
