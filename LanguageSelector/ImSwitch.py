@@ -24,8 +24,6 @@ class ImSwitch(object):
         return os.path.exists(self.bin)
 
     def removeDanglingSymlinks(self):
-        if os.path.exists(self.local_conffile):
-        	os.unlink(self.local_conffile)
         return True
     
     def enabledForLocale(self, locale):
