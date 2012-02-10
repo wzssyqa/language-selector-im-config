@@ -11,8 +11,7 @@ class ImSwitch(object):
     
     # some global data
     global_confdir = "/etc/X11/xinit/xinput.d/"
-    local_confdir = os.path.expanduser("~/.xinput.d/")
-    bin = "/usr/bin/im-switch"
+    bin = "/usr/bin/im-config"
     default_method = "ibus"
     blacklist_file = "/usr/share/language-selector/data/im-switch.blacklist"
 
@@ -118,7 +117,8 @@ class ImSwitch(object):
         """ get the current default input method for the selected
             locale (in ll_CC form)
         """
-        return os.path.basename(os.path.realpath(self.local_confdir+locale))
+        progress=os.popen("grep 'run_im' ~/.xinputrc | awk -F ' ' '{print $2}'")
+        return progress.read().rstrip()
         
 if __name__ == "__main__":
     im = ImSwitch()
@@ -126,8 +126,8 @@ if __name__ == "__main__":
 #    print im.enabledForLocale("all_ALL")
     print "available input methods: "
     print im.getAvailableInputMethods()
-    print "current method: ",
-    print im.getCurrentInputMethod()
+    print "current method: %s" % im.getCurrentInputMethod(),
+#    print im.getCurrentInputMethod()
     sys.exit(1)
     print "switching to 'th-xim': ",
     print im.setDefaultInputMethod("th-xim")
