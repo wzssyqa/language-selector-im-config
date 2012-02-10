@@ -24,30 +24,30 @@ class ImSwitch(object):
         return os.path.exists(self.bin)
 
     def removeDanglingSymlinks(self):
-        if os.path.exists(local_conffile):
-        	os.unlink(local_conffile)
+        if os.path.exists(self.local_conffile):
+        	os.unlink(self.local_conffile)
         return True
     
     def enabledForLocale(self, locale):
         " check if we have a config for this specifc locale (e.g. ja_JP) "
-        if os.path.exists(local_conffile):
-        	os.unlink(local_conffile)
+        if os.path.exists(self.local_conffile):
+        	os.unlink(self.local_conffile)
         return True
 
     def enable(self, locale):
         " enable input methods for locale"
-        if os.path.exists(local_conffile):
-        	os.unlink(local_conffile)
+        if os.path.exists(self.local_conffile):
+        	os.unlink(self.local_conffile)
         return True
 
     def disable(self, locale):
         " disable input method for locale "
-        f=open(local_conffile,'w')
+        f=open(self.local_conffile,'w')
         f.write('# Generate by Language-Selector, See im-config(8) for more information.\n')
 
     def getInputMethodForLocale(self, locale):
         """ im-config doesn't support it. """
-        if os.path.exists(local_conffile):
+        if os.path.exists(self.local_conffile):
         	progress=os.popen("grep 'run_im' ~/.xinputrc | awk -F ' ' '{print $2}'")
         	return progress.read().rstrip()
         else:
@@ -56,7 +56,7 @@ class ImSwitch(object):
         
     def setInputMethodForLocale(self, im, locale):
         """ im-config doesn't support it. """
-        f=open(local_conffile,'w')
+        f=open(self.local_conffile,'w')
         f.write('# Generate by Language-Selector, See im-config(8) for more information.\n')
         f.write('run_im '+im+'\n')
         return True
@@ -80,7 +80,7 @@ class ImSwitch(object):
     def setDefaultInputMethod(self, method, locale="all_ALL"):
         """ sets the default input method, the locale is deprecated
         """
-        f=open(local_conffile,'w')
+        f=open(self.local_conffile,'w')
         f.write('# Generate by Language-Selector, See im-config(8) for more information.\n')
         f.write('run_im '+method+'\n')
 
@@ -88,15 +88,15 @@ class ImSwitch(object):
         """ reset the default input method to auto (controlled by
             im-config
         """
-        if os.path.exists(local_conffile):
-        	os.unlink(local_conffile)
+        if os.path.exists(self.local_conffile):
+        	os.unlink(self.local_conffile)
         return True
         
     def getCurrentInputMethod(self, locale="all_ALL"):
         """ get the current default input method for the selected
             locale (in ll_CC form)
         """
-        if os.path.exists(local_conffile):
+        if os.path.exists(self.local_conffile):
         	progress=os.popen("grep 'run_im' ~/.xinputrc | awk -F ' ' '{print $2}'")
         	return progress.read().rstrip()
         else:
