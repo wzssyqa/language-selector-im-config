@@ -13,71 +13,45 @@ class ImSwitch(object):
     global_confdir = "/etc/X11/xinit/xinput.d/"
     bin = "/usr/bin/im-config"
     default_method = "ibus"
-    blacklist_file = "/usr/share/language-selector/data/im-switch.blacklist"
+    blacklist_file = "/usr/share/language-selector/data/im-config.blacklist"
 
     def __init__(self):
         pass
 
     def available(self):
-        " return True if im-switch is available at all "
+        " return True if im-config is available at all "
         return os.path.exists(self.bin)
 
     def removeDanglingSymlinks(self):
-        for dir in (self.local_confdir, self.global_confdir):
-            if os.path.exists(dir):
-                for dentry in os.listdir(dir):
-                    if not os.path.exists("%s/%s" % (dir, dentry)):
-                        os.unlink("%s/%s" % (dir, dentry))
+        if os.path.exists('~/.xinputrc'):
+        	os.unlink('~/.xinputrc')
+        return True
     
     def enabledForLocale(self, locale):
         " check if we have a config for this specifc locale (e.g. ja_JP) "
-        for dir in (self.local_confdir, self.global_confdir):
-            for name in (locale, "all_ALL"):
-                target = os.path.join(dir,name)
-                #print "checking im-switch config: ", target, os.path.basename(os.path.realpath(target))
-                if os.path.exists(target):
-                    im_name = os.path.basename(os.path.realpath(target))
-                    if im_name in ("none", "default"):
-                        #print "points to none or default"
-                        return False
-                    #print "points to real config"
-                    return True
         return False
 
     def enable(self, locale):
         " enable input methods for locale"
-        # try auto first
-        subprocess.call(["im-switch","-z",locale,"-a"])
-        # if no config is set, force the default
-        if not self.enabledForLocale(locale):
-            subprocess.call(["im-switch","-z",locale,
-                             "-s", self.default_method])
+        if os.path.exists('~/.xinputrc'):
+        	os.unlink('~/.xinputrc')
+        return True
 
     def disable(self, locale):
         " disable input method for locale "
-        # remove local config first
-        if os.path.exists(os.path.join(self.local_confdir, locale)):
-            os.unlink(os.path.join(self.local_confdir, locale))
-        # see if we still have a input method and if so, force "none"
-        if self.enabledForLocale(locale):
-            subprocess.call(["im-switch","-z",locale,"-s","none"])
+        f=open('~/.xinputrc','w')
+        f.write('# Generate by Language-Selector, See im-config(8) for more information.\n')
 
     def getInputMethodForLocale(self, locale):
-        for dir in (self.local_confdir, self.global_confdir):
-            if os.path.exists(dir):
-                for name in (locale, "all_ALL"):
-                    target = os.path.join(dir,name)
-                    if os.path.exists(target):
-                        return os.path.basename(os.path.realpath(target))
+        """ im-config doesn't support it. """
         return None
         
     def setInputMethodForLocale(self, im, locale):
-        if not os.path.exists(self.local_confdir):
-            os.mkdir(self.local_confdir)
-        subprocess.call(["im-switch","-z",locale,"-s",im])
+        """ im-config doesn't support it. """
+        pass
     
     def getAvailableInputMethods(self):
-        """ return the input methods available via im-switch """
+        """ return the input methods available via im-config """
         # load blacklist
         blacklist = []
         for l in open(self.blacklist_file):
@@ -93,31 +67,25 @@ class ImSwitch(object):
         return ['none']+sorted(inputMethods)
 
     def setDefaultInputMethod(self, method, locale="all_ALL"):
-        """ sets the default input method for the given locale
-            (in ll_CC form)
+        """ sets the default input method, the locale is deprecated
         """
-        l = self.confdir+locale
-        if os.path.islink(l):
-            os.unlink(l)
-        os.symlink(self.confdir+method, l)
-        return True
+        f=open('~/.xinputrc','w')
+        f.write('# Generate by Language-Selector, See im-config(8) for more information.\n')
+        f.write('run_im '+method+'\n')
 
     def resetDefaultInputMethod(self, locale="all_ALL"):
         """ reset the default input method to auto (controlled by
-            im-switch
+            im-config
         """
-        d = "/etc/alternatives/xinput-%s" % locale
-        l = self.confdir+locale
-        if os.path.islink(l):
-            os.unlink(l)
-        os.symlink(d, self.confdir+locale)
+        if os.path.exists('~/.xinputrc'):
+        	os.unlink('~/.xinputrc')
         return True
         
     def getCurrentInputMethod(self, locale="all_ALL"):
         """ get the current default input method for the selected
             locale (in ll_CC form)
         """
-        if os.path.exists(~/.xinputrc):
+        if os.path.exists('~/.xinputrc'):
         	progress=os.popen("grep 'run_im' ~/.xinputrc | awk -F ' ' '{print $2}'")
         	return progress.read().rstrip()
         else:
@@ -129,7 +97,7 @@ if __name__ == "__main__":
 #    print im.enabledForLocale("all_ALL")
     print "available input methods: "
     print im.getAvailableInputMethods()
-    print "current method: %s" % im.getCurrentInputMethod(),
+    print "current method: %s" % im.getCurrentInputMethod()
 #    print im.getCurrentInputMethod()
     sys.exit(1)
     print "switching to 'th-xim': ",
