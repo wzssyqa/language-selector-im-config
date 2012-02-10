@@ -117,8 +117,11 @@ class ImSwitch(object):
         """ get the current default input method for the selected
             locale (in ll_CC form)
         """
-        progress=os.popen("grep 'run_im' ~/.xinputrc | awk -F ' ' '{print $2}'")
-        return progress.read().rstrip()
+        if os.path.exists(~/.xinputrc):
+        	progress=os.popen("grep 'run_im' ~/.xinputrc | awk -F ' ' '{print $2}'")
+        	return progress.read().rstrip()
+        else:
+        	return os.path.basename(os.path.realpath(self.global_confdir+locale))
         
 if __name__ == "__main__":
     im = ImSwitch()
