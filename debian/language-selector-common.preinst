@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -e
+
+#DEBHELPER#
+
+case "$1" in
+install|upgrade)
+  # old versions had a symlink to "none" meaning unconfigured
+  # new versions just don't have a symlink
+  if dpkg --compare-versions "$2" lt "0.1.27"; then
+    if [ -L /etc/fonts/language-selector.conf ]; then
+      if [ "$(readlink /etc/fonts/language-selector.conf)" = "/usr/share/language-selector/fontconfig/none" ]; then
+        rm /etc/fonts/language-selector.conf
+      fi
+    fi
+  fi
+esac

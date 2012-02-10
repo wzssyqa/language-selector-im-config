@@ -1,0 +1,90 @@
+Source: language-selector
+Section: admin
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 7.0.50~),
+ python,
+ python-distutils-extra,
+ python-setuptools,
+ pyqt4-dev-tools,
+ intltool,
+ intltool-debian,
+ dh-translations
+X-Python-Version: >= 2.6
+Standards-Version: 3.9.2
+
+Package: language-selector-gnome
+Architecture: all
+Depends: language-selector-common (= ${binary:Version}),
+ accountsservice (>= 0.6.15-2ubuntu3),
+ ${misc:Depends},
+ ${python:Depends},
+ python-gi,
+ gir1.2-gtk-3.0,
+ gir1.2-vte-2.90,
+ python-apt (>= 0.6.12),
+ aptdaemon (>= 0.40+bzr527),
+ python-aptdaemon.gtk3widgets,
+ im-switch
+Replaces: language-selector (<< 0.17)
+Conflicts: language-selector (<< 0.17)
+XB-Python-Version: ${python:Versions}
+Description: Language selector for Ubuntu
+ This package let you change and install language packs
+ in Ubuntu.
+ .
+ This package contains the GTK+ frontend.
+
+Package: language-selector-kde
+Architecture: all
+Depends: language-selector-common (= ${binary:Version}),
+ ${misc:Depends},
+ ${python:Depends},
+ python-qt4,
+ python-kde4,
+ qapt-batch,
+ python-apt
+Replaces: language-selector-qt (<< 0.16)
+Conflicts: language-selector-qt (<< 0.16)
+XB-Python-Version: ${python:Versions}
+Description: Language selector for Kubuntu
+ This package let you change and install language packs
+ in Kubuntu.
+ .
+ This package contains the KDE frontend.
+
+Package: language-selector-qt
+Section: oldlibs
+Priority: extra
+Architecture: all
+Depends: ${misc:Depends},
+ language-selector-kde
+Description: Language selector for Kubuntu (transitional package)
+ This package is a transitional package that can safely be removed
+ after you have installed language-selector-kde
+
+Package: language-selector
+Section: oldlibs
+Priority: extra
+Architecture: all
+Depends: ${misc:Depends},
+ language-selector-gnome
+Description: Language selector for Ubuntu (transitional package)
+ This package is a transitional package that can safely be removed
+ after you have installed language-selector-gnome
+
+Package: language-selector-common
+Architecture: all
+Depends: ${python:Depends},
+ ${misc:Depends},
+ iso-codes,
+ python-apt (>= 0.7.12.0),
+ python-dbus,
+ dbus,
+ accountsservice (>= 0.6.15-2ubuntu3)
+XB-Python-Version: ${python:Versions}
+Description: Language selector for Ubuntu
+ This package let you change and install language packs
+ in Ubuntu.
+ .
+ This package contains the common part of language-selector

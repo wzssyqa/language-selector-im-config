@@ -1,0 +1,4 @@
+usr/share/kde4/apps/language-selector/language-selector.py
+usr/lib/python*/*-packages/LanguageSelector/qt
+usr/share/kde4/services/language-selector.desktop
+usr/share/language-support/incomplete-language-support-kde.note

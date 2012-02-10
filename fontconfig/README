@@ -1,0 +1,25 @@
+These files go into /etc/fonts/conf.avail/ (debian/install) and should be
+linked to /etc/fonts/conf.d/ .
+
+They replace 52-language-selector .
+
+29-language-selector-$lang(-$country)
+	* rendering information
+	* should be linked by default (debian/rules)
+	* excpetion: -zh should NOT linked by default.
+	  This the is old configuration from zh_{CN|HK|SG|TW} and has been set
+	  already by the fonts-arphic-uming font. If users require these
+	  settings for other chinese fonts (which is not recommended, because
+	  they don't contain bitmaps), then they can link the file by hand.
+30-cjk-aliases
+	* should be linked by default
+69-language-selector-$lang-$country
+	* mutually exclusive
+	* depending on which language environment is chosen, one of these gets
+	  linked to /etc/fonts/conf.d/ . When the language environment is
+	  changed, remove this link first, then link the desired 
+	  -$lang-$country file.
+99-language-selector-zh
+	* artificial emboldening for chinese fonts
+	* should be linked by default (debian/rules)
+

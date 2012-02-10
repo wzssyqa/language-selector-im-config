@@ -1,0 +1,524 @@
+# Thai translation for language-selector
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the language-selector package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: language-selector\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-24 13:55+0000\n"
+"PO-Revision-Date: 2010-09-24 17:22+0000\n"
+"Last-Translator: Roys Hengwatanakul <roysheng@gmail.com>\n"
+"Language-Team: Thai <th@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Launchpad-Export-Date: 2010-10-05 09:20+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+"Language: th\n"
+
+#. Hack for Chinese langpack split
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:47
+msgid "Chinese (simplified)"
+msgstr "ภาษาจีนประยุกต์"
+
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:49
+msgid "Chinese (traditional)"
+msgstr "ภาษาจีนดั้งเดิม"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
+#: ../LanguageSelector/qt/QtLanguageSelector.py:98
+msgid "No language information available"
+msgstr "ไม่มีข้อมูลของภาษาให้ดูได้"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
+#: ../LanguageSelector/qt/QtLanguageSelector.py:99
+msgid ""
+"The system does not have information about the available languages yet. Do "
+"you want to perform a network update to get them now? "
+msgstr ""
+"ระบบยังไม่มีข้อมูลของภาษาที่สามารถใช้ได้เลย "
+"คุณต้องการที่จะทำการปรับปรุงผ่านระบบเครือข่ายเดี๋ยวนี้หรือไม่? "
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
+#: ../LanguageSelector/qt/QtLanguageSelector.py:93
+msgid "_Update"
+msgstr "_ปรับข้อมูล"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:307
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:345
+#: ../data/LanguageSelector.ui.h:23
+msgid "Language"
+msgstr "ภาษา"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+msgid "Installed"
+msgstr "ติดตั้งเแล้ว"
+
+#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:383
+#, python-format
+msgid "%(INSTALL)d to install"
+msgid_plural "%(INSTALL)d to install"
+msgstr[0] "%(INSTALL)d ที่จะติดตั้ง"
+
+#. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:385
+#, python-format
+msgid "%(REMOVE)d to remove"
+msgid_plural "%(REMOVE)d to remove"
+msgstr[0] "%(REMOVE)d ที่จะเอาออก"
+
+#. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
+#, python-format
+msgid "%s, %s"
+msgstr "%s, %s"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:509
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:703
+#: ../LanguageSelector/qt/QtLanguageSelector.py:82
+#: ../LanguageSelector/qt/QtLanguageSelector.py:310
+#: ../check-language-support:52
+msgid "Software database is broken"
+msgstr "ฐานข้อมูลของซอฟต์แวร์ใช้ไม่ได้"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:510
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:704
+#: ../check-language-support:53
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"ไม่สามารถที่จะติดตั้งหรือลบออกซอฟแวร์ใดๆ กรุณาใช้โปรแกรมจัดการแพกเกจ "
+"\"Synaptic\" หรือ คำสั่ง \"sudo apt-get install -f\" "
+"ในเทอร์มินัลเพื่อที่จะแก้ปัญหานี้ก่อน"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+msgid "Could not install the selected language support"
+msgstr "ไม่สามารถทำการติดตั้งภาษาที่เลือกไว้"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:556
+msgid ""
+"This is perhaps a bug of this application. Please file a bug report at "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
+msgstr ""
+"นี่อาจเป็นบั๊กของโปรแกรมประยุกต์ตัวนี้. กรุณาส่งรายงานบั๊กไปที่ "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+msgid "Could not install the full language support"
+msgstr "ไม่สามารถติดตั้งการสนับสนุนภาษาได้อย่างสมบรูณ์"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:581
+msgid ""
+"Usually this is related to an error in your software archive or software "
+"manager. Check your software preferences in the System > Administration menu."
+msgstr ""
+"โดยปกติแล้ว "
+"นี่เป็นสิ่งที่คล้ายคลึงกับความผิดพลาดที่เกิดขึ้นในไฟล์กล่องบรรจุซอฟต์แวร์ของค"
+"ุณหรือตัวจัดการซอฟต์แวร์. ตรวจสอบการปรับแต่งซอฟต์แวร์ของคุณที่ ระบบ > "
+"สำหรับผู้ดูแลระบบ."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:660
+#: ../LanguageSelector/qt/QtLanguageSelector.py:164
+msgid "The language support is not installed completely"
+msgstr "ระบบภาษาไม่ได้ติดตั้งทุกอย่าง"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:661
+#: ../LanguageSelector/qt/QtLanguageSelector.py:165
+msgid ""
+"Some translations or writing aids available for your chosen languages are "
+"not installed yet. Do you want to install them now?"
+msgstr ""
+"คำแปลและตัวช่วยในการเขียนสำหรับภาษาที่คุณเลือกยังไม่ได้ติดตั้ง "
+"คุณต้องการที่จะเริ่มทำการติดตั้งเดี๋ยวนี้หรือเปล่า?"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:664
+#: ../LanguageSelector/qt/QtLanguageSelector.py:94
+#: ../LanguageSelector/qt/QtLanguageSelector.py:160
+msgid "_Remind Me Later"
+msgstr "เ_ตือนอีกคราวหน้า"
+
+#. FIXME: add "details"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:665
+#: ../LanguageSelector/qt/QtLanguageSelector.py:159
+msgid "_Install"
+msgstr "_ติดตั้ง"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
+msgid "Details"
+msgstr "รายละเอียด"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:57
+msgid "Uninstall"
+msgstr "เอาออก"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:58
+msgid "Select language to uninstall:"
+msgstr "เลือกภาษาที่จะเอาออก:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:65
+msgid "Language Selector"
+msgstr "ตัวเลือกภาษา"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:83
+#: ../LanguageSelector/qt/QtLanguageSelector.py:311
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"ไม่สามารถที่จะติดตั้งหรือลบออกซอฟแวร์ใดๆ กรุณาใช้โปรแกรมจัดการแพกเกจ "
+"\"Adept\" หรือ คำสั่ง \"sudo apt-get install -f\" "
+"ในเทอร์มินัลเพื่อที่จะแก้ปัญหานี้ก่อน"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+msgid "Default system language:"
+msgstr "ภาษาของระบบโดยปริยาย:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+msgid "Set System Language"
+msgstr "ตั้งค่าภาษาของระบบ"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+msgid "Keyboard input method:"
+msgstr "วิธีป้อนข้อมูลด้วยคีย์บอร์ด:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:122
+#: ../LanguageSelector/qt/QtLanguageSelector.py:125
+#: ../data/LanguageSelector.ui.h:13
+msgid "Cancel"
+msgstr "ยกเลิก"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+msgid "Select language to install:"
+msgstr "เลือกภาษาที่จะติดตั้ง:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:124
+msgid "Install"
+msgstr "ติดตั้ง"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:213
+msgid "Already installed"
+msgstr "ติดตั้งแล้ว"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:217
+msgid "Partially Installed"
+msgstr "ติดตั้งแล้วบางส่วน"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:221
+msgid "Not installed"
+msgstr "ยังไม่ได้ติดตั้ง"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+#, python-format
+msgid "Default system Language now set to %s."
+msgstr "ภาษาของระบบโดยปริยายถูกตั้งค่าให้เป็น %s"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+msgid "Language Set"
+msgstr "ชุดภาษา"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+#, python-format
+msgid ""
+"Translations and support have now been installed for %s.  Select them from "
+"the Add Language button."
+msgstr ""
+"คำแปลและระบบสนับสนุนถูกติดตั้งแล้วสำหรับ %s คุณสามารถเลือกได้จากปุ่มเพิ่มภาษา"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+msgid "Language Installed"
+msgstr "ภาษาที่ติดตั้งแล้ว"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+#, python-format
+msgid "Translations and support have now been uninstalled for %s."
+msgstr "คำแปลและระบบสนับสนุนของ %s ถูกเอาออกแล้ว"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+msgid "Language Uninstalled"
+msgstr "ภาษาที่ถูกเอาออก"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+msgid "Failed to set system language."
+msgstr "ไม่สามารถตั้งค่าภาษาของระบบ"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+msgid "Language Not Set"
+msgstr "ภาษาไม่ได้ถูกตั้งค่า"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+msgid "Please run this software with administrative rights."
+msgstr "กรุณาเรียกซอฟต์แวร์นี้ด้วยสิทธิของผู้บริหารระบบ"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+msgid "Not Root User"
+msgstr "ไม่ใช่ผู้ใช้ root"
+
+#: ../data/LanguageSelector.ui.h:1
+msgid "<b>Example</b>"
+msgstr "<b>ตัวอย่าง</b>"
+
+#: ../data/LanguageSelector.ui.h:2
+msgid ""
+"<big><b>Checking available language support</b></big>\n"
+"\n"
+"The availability of translations or writing aids can differ between "
+"languages."
+msgstr ""
+"<big><b>กำลังตรวจหาภาษาที่สนับสนุน</b></big>\n"
+"\n"
+"คำแปลและตัวช่วยในการเขียนอาจจะมีไม่เท่ากันในแต่ละภาษา"
+
+#: ../data/LanguageSelector.ui.h:5
+msgid "<small>Changes take effect next time you log in.</small>"
+msgstr "<small>การเปลี่ยนแปลงจะมีผลเมื่อเข้าระบบครั้งถัดไป</small>"
+
+#: ../data/LanguageSelector.ui.h:6
+msgid ""
+"<small>Drag languages to arrange them in order of preference.\n"
+"Changes take effect next time you log in.</small>"
+msgstr ""
+"<small>ลากภาษาเพื่อจัดลำดับในรายการการตั้งค่าส่วนตัว\n"
+"โดยจะใช้ลำดับใหม่นี้ในครั้งหน้าที่คุณเข้าระบบ</small>"
+
+#: ../data/LanguageSelector.ui.h:8
+msgid ""
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
+msgstr ""
+"<small>ใช้ภาษาเดียวกับที่เลือกนี้ กับการเริ่มต้นและหน้าเข้าระบบ</small>"
+
+#: ../data/LanguageSelector.ui.h:9
+msgid ""
+"<small>Uses the same text format choice for startup and the login "
+"screen.</small>"
+msgstr "<small>ใช้รูปแบบข้อความเหมือนตอนเริ่มและหน้าจอเข้าระบบ</small>"
+
+#: ../data/LanguageSelector.ui.h:10
+msgid ""
+"Additional fonts for this language which might be of general interest, e.g. "
+"decorative fonts for printing documents."
+msgstr "แบบอักษรเพิ่มเติมที่น่าสนใจเช่น แบบอักษรสวยงามสำหรับพิมพ์เอกสาร"
+
+#: ../data/LanguageSelector.ui.h:11
+msgid "Apply Changes"
+msgstr "ทำการเปลี่ยนแปลง"
+
+#: ../data/LanguageSelector.ui.h:12
+msgid "Apply System-Wide..."
+msgstr "มีผลครอบคลุมทั้งเครือข่าย"
+
+#: ../data/LanguageSelector.ui.h:14
+msgid "Components:"
+msgstr "องค์ประกอบ:"
+
+#: ../data/LanguageSelector.ui.h:15
+msgid "Currency:"
+msgstr "เงินสกุล:"
+
+#: ../data/LanguageSelector.ui.h:16
+msgid "Date:"
+msgstr "วันที่:"
+
+#: ../data/LanguageSelector.ui.h:17
+msgid "Display numbers, dates and currency amounts in the usual format for:"
+msgstr "การแสดงผลตัวเลข, วันที่ และหน่วยเงินในรูปแบบ:"
+
+#: ../data/LanguageSelector.ui.h:18
+msgid "Extra fonts"
+msgstr "แบบอักษรเพิ่มเติม"
+
+#: ../data/LanguageSelector.ui.h:19
+msgid "Input methods"
+msgstr "วิธีพิมพ์"
+
+#: ../data/LanguageSelector.ui.h:20
+msgid "Install / Remove Languages..."
+msgstr "ติดตั้ง/ลบภาษาออก..."
+
+#: ../data/LanguageSelector.ui.h:21
+msgid "Installed Languages"
+msgstr "ภาษาที่ติดตั้งแล้ว"
+
+#: ../data/LanguageSelector.ui.h:22
+msgid "Keyboard input method system:"
+msgstr "ระบบวิธีป้อนข้อมูลด้วยแป้นพิมพ์:"
+
+#: ../data/LanguageSelector.ui.h:24
+msgid "Language & Text"
+msgstr "ภาษาและข้อความ"
+
+#: ../data/LanguageSelector.ui.h:25
+msgid "Language for menus and windows:"
+msgstr "ภาษาสำหรับเมนูและหน้าต่าง:"
+
+#: ../data/LanguageSelector.ui.h:26
+msgid "Number:"
+msgstr "ตัวเลข:"
+
+#: ../data/LanguageSelector.ui.h:27
+msgid "Spellchecking and writing aids"
+msgstr "ตรวจคำสะกดและตัวช่วยเขียน"
+
+#: ../data/LanguageSelector.ui.h:28
+msgid "Text"
+msgstr "ข้อความ"
+
+#: ../data/LanguageSelector.ui.h:29
+msgid "Translations"
+msgstr "คำแปล"
+
+#: ../data/LanguageSelector.ui.h:30
+msgid "Translations for your desktop."
+msgstr "คำแปลสำหรับเดสก์ท็อปของคุณ"
+
+#: ../data/LanguageSelector.ui.h:31
+msgid ""
+"When a language is installed, individual users can choose it in their "
+"Language settings."
+msgstr "เมื่อภาษาถูกติดตั้ง ผู้ใช้แต่ละคนสามารถเลือกได้เวลาตั้งค่าภาษา"
+
+#: ../data/LanguageSelector.ui.h:32
+msgid ""
+"Word lists, dictionaries, thesauruses, etc. which can help typing by "
+"highlighting, correcting or suggesting words."
+msgstr ""
+"รายการของคำ, พจนานุกรม, สารานุกรม, "
+"อื่นๆที่อาจจะช่วยในการพิมพ์โดยเน้นคำที่ผิด แก้ไข หรือแนะนำคำอื่นๆ"
+
+#: ../data/language-selector.desktop.in.h:1
+#: ../data/qt-language-selector.desktop.in.h:1
+msgid "Configure multiple and native language support on your system"
+msgstr "ตั้งค่าการสนับสนุนภาษาต่างๆในระบบของคุณ"
+
+#: ../data/language-selector.desktop.in.h:2
+#: ../data/qt-language-selector.desktop.in.h:2
+msgid "Language Support"
+msgstr "สนับสนุนภาษา"
+
+#. Name
+#: ..//data/incomplete-language-support-gnome.note.in:5
+#: ..//data/incomplete-language-support-qt.note.in:5
+msgid "Incomplete Language Support"
+msgstr "สนับสนุนภาษาได้บางส่วน"
+
+#. Description
+#: ..//data/incomplete-language-support-gnome.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
+msgstr ""
+"ไฟล์ที่ใช้สนับสนุนภาษาที่คุณเลือกดูเหมือนจะมีไม่ครบ "
+"คุณสามารถติดตั้งส่วนที่หายไปโดยคลิกที่ \"Run this action now\" "
+"และทำตามขั้นตอนที่บอกไว้ ต้องใช้การเชื่อมต่อทางอินเทอร์เน็ต "
+"ถ้าคุณต้องการที่จะทำภายหลัง กรุณาไปที่ \"ระบบ -> ดูแลระบบ -> สนับสนุนภาษา\" "
+"แทน"
+
+#. Description
+#: ..//data/incomplete-language-support-qt.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
+msgstr ""
+"ไฟล์ที่ใช้สนับสนุนภาษาที่คุณเลือกดูเหมือนจะมีไม่ครบ "
+"คุณสามารถติดตั้งส่วนที่หายไปโดยคลิกที่ \"Run this action now\" "
+"และทำตามขั้นตอนที่บอกไว้ ต้องใช้การเชื่อมต่อทางอินเทอร์เน็ต "
+"ถ้าคุณต้องการที่จะทำภายหลัง กรุณาไปที่ \"ตั้งค่าระบบ -> ภูมิภาคและภาษา\" แทน"
+
+#. Name
+#: ../data/restart_session_required.note.in:5
+msgid "Session Restart Required"
+msgstr "ต้องการที่จะเริ่มเซสชันใหม่"
+
+#. Description
+#: ../data/restart_session_required.note.in:6
+msgid "The new language settings will take effect once you have logged out."
+msgstr "ค่าที่ตั้งไว้จะมีผลหลังจากที่คุณออกจากระบบ"
+
+#: ../gnome-language-selector:25
+msgid "don't verify installed language support"
+msgstr "ไม่ต้องตรวจสอบการสนับสนุนของภาษาที่ติดตั้งแล้ว"
+
+#: ../gnome-language-selector:28 ../check-language-support:22
+msgid "alternative datadir"
+msgstr "datadir อันอื่น"
+
+#: ../fontconfig-voodoo:18
+msgid "Aborting"
+msgstr "กำลังยกเลิก"
+
+#: ../fontconfig-voodoo:26
+msgid "Force even when a configuration exists"
+msgstr "บังคับถึงแม้ว่าจะมีค่าปรับแต่งอยู่แล้ว"
+
+#: ../fontconfig-voodoo:28
+msgid "Set fontconfig voodoo for the selected language"
+msgstr "ตั้งค่า fontconfig voodoo สำหรับภาษาที่เลือก"
+
+#: ../fontconfig-voodoo:32
+msgid ""
+"Guess a configuration based on the LANGUAGE environment. Sets the config to "
+"'none' if nothing suitable was found"
+msgstr ""
+"เดาค่าปรับแต่งจากภาษาที่ตั้งไว้ ตั้งค่าไว้ที่ \"ไม่ตั้งค่า\" "
+"ถ้าไม่มีค่าที่เหมาะสม"
+
+#: ../fontconfig-voodoo:37
+msgid "List the available fontconfig-voodoo configs"
+msgstr "แสดงรายการของค่าต่างๆของ fontconfig-voodoo configs"
+
+#: ../fontconfig-voodoo:40
+msgid "Show the current fontconfig-voodoo config"
+msgstr "แสดงค่าปัจจุบันของ fontconfig-voodoo config"
+
+#: ../fontconfig-voodoo:43
+msgid "Remove the current fontconfig-voodoo config"
+msgstr "ลบค่าปัจจุบันของ fontconfig-voodoo config"
+
+#: ../fontconfig-voodoo:65
+msgid "Unconfigured"
+msgstr "ยังไม่ได้ปรับแต่ง"
+
+#: ../fontconfig-voodoo:77
+msgid "A configuration exists already. Use '--force' to overwrite it. "
+msgstr "ค่าปรับแต่งมีอยู่แล้ว ใช้ '--force' เพื่อที่จะเขียนทับใหม่ "
+
+#: ../fontconfig-voodoo:96
+msgid "No fontconfig-voodoo configuration found for the selected locale"
+msgstr "ไม่มีค่าปรับแต่งของ fontconfig-voodoo สำหรับภาษาที่เลือก"
+
+#: ../check-language-support:19
+msgid "target language code"
+msgstr "รหัสอ้างอิงของภาษาที่เลือก"
+
+#: ../check-language-support:23
+msgid "check for the given package(s) only -- separate packagenames by comma"
+msgstr ""
+
+#: ../check-language-support:25
+msgid "check all available languages"
+msgstr "ตรวจหาภาษาที่มีทั้งหมด"
+
+#: ../check-language-support:28
+msgid "show installed packages as well as missing ones"
+msgstr "แสดงรายการแพกเกจที่ติดตั้งแล้ว เพื่อให้รู้ว่ามีอะไรที่ยังขาด"
+
+#~ msgid "The list of available languages on the system has been updated."
+#~ msgstr "รายการของภาษาที่เลือกใช้ได้ของระบบถูกปรับปรุงแล้ว"

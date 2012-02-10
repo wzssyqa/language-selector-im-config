@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with python2,translations
+
+override_dh_auto_install:
+	python ./setup.py install --root=$(CURDIR)/debian/tmp --prefix=/usr --install-layout=deb

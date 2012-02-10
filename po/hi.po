@@ -1,0 +1,582 @@
+# Hindi translation for language-selector
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the language-selector package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: language-selector\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-24 13:55+0000\n"
+"PO-Revision-Date: 2010-04-27 16:53+0000\n"
+"Last-Translator: Manish Kumar <manishku86@yahoo.co.in>\n"
+"Language-Team: Hindi <hi@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2010-10-05 09:20+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+"Language: hi\n"
+
+#. Hack for Chinese langpack split
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:47
+msgid "Chinese (simplified)"
+msgstr "चीनी (सरलीकृत)"
+
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:49
+msgid "Chinese (traditional)"
+msgstr "चीनी (परम्परागत)"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
+#: ../LanguageSelector/qt/QtLanguageSelector.py:98
+msgid "No language information available"
+msgstr "भाषा संबंधी सूचना अनुपलब्ध है"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
+#: ../LanguageSelector/qt/QtLanguageSelector.py:99
+msgid ""
+"The system does not have information about the available languages yet. Do "
+"you want to perform a network update to get them now? "
+msgstr ""
+"तंत्र के पास अभी  उपलब्ध भाषाओं की सूचना नहीं है. क्या आप अब उन्हें पाने के "
+"लिये तंत्र को संजाल से अद्यतन करना चाहेंगें? "
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
+#: ../LanguageSelector/qt/QtLanguageSelector.py:93
+msgid "_Update"
+msgstr "अद्यतन करें (_U)"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:307
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:345
+#: ../data/LanguageSelector.ui.h:23
+msgid "Language"
+msgstr "भाषा"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+msgid "Installed"
+msgstr "संस्थापित"
+
+#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:383
+#, python-format
+msgid "%(INSTALL)d to install"
+msgid_plural "%(INSTALL)d to install"
+msgstr[0] "%(INSTALL)d संस्थापना हेतु"
+msgstr[1] "%(INSTALL)d संस्थापना हेतु"
+
+#. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:385
+#, python-format
+msgid "%(REMOVE)d to remove"
+msgid_plural "%(REMOVE)d to remove"
+msgstr[0] "%(REMOVE)d हटाने हेतु"
+msgstr[1] "%(REMOVE)d हटाने हेतु"
+
+#. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
+#, python-format
+msgid "%s, %s"
+msgstr "%s, %s"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:509
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:703
+#: ../LanguageSelector/qt/QtLanguageSelector.py:82
+#: ../LanguageSelector/qt/QtLanguageSelector.py:310
+#: ../check-language-support:52
+msgid "Software database is broken"
+msgstr "साफ्टवेयर डाटाबेस खंडित है"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:510
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:704
+#: ../check-language-support:53
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"किसी साफ्टवेयर को संस्थापित करना या हटाना असम्भव है. कृपया पैकेज प्रबंधक "
+"\"सिनेप्टीक\" का उपयोग करें या टर्मिनल में जाकर \"sudo apt-get install -f\" "
+"को चलाएं ताकि इस समस्या को ठीक किया जा सके."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+msgid "Could not install the selected language support"
+msgstr "चयनित भाषा समर्थन संस्थापित नहीं कर सकता"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:556
+msgid ""
+"This is perhaps a bug of this application. Please file a bug report at "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
+msgstr ""
+"इस अनुप्रयोग के लिए सम्भवतः यह बग है. कृपया बग रिपोर्ट "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug पर भेजें"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+msgid "Could not install the full language support"
+msgstr "पूर्ण भाषा समर्थन संस्थापित नहीं कर सकता"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:581
+msgid ""
+"Usually this is related to an error in your software archive or software "
+"manager. Check your software preferences in the System > Administration menu."
+msgstr ""
+"समान्यतः यह आपके साफ्टवेयर प्रबंधक या साफ्टवेयर अभिलेख के संबंधित त्रुटि है. "
+"अपने साफ्टवेयर वरियता को जाँचने हेतु तंत्र > प्रशासन सूची में जाएं."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:660
+#: ../LanguageSelector/qt/QtLanguageSelector.py:164
+msgid "The language support is not installed completely"
+msgstr "भाषा समर्थन पूर्णतः संस्थापित नहीं है"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:661
+#: ../LanguageSelector/qt/QtLanguageSelector.py:165
+msgid ""
+"Some translations or writing aids available for your chosen languages are "
+"not installed yet. Do you want to install them now?"
+msgstr ""
+"कुछ अनुवाद या लेखनी उपकरण आपके चुने हुए भाषा में उपलब्ध है अभी तक संस्थापित "
+"नहीं हुआ है. क्या आप इसे संस्थापित करना चाहेंगे?"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:664
+#: ../LanguageSelector/qt/QtLanguageSelector.py:94
+#: ../LanguageSelector/qt/QtLanguageSelector.py:160
+msgid "_Remind Me Later"
+msgstr "मुझे बाद में याद दिलायें (_R)"
+
+#. FIXME: add "details"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:665
+#: ../LanguageSelector/qt/QtLanguageSelector.py:159
+msgid "_Install"
+msgstr "संस्थापित करें (_I)"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
+msgid "Details"
+msgstr "विवरण"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:57
+msgid "Uninstall"
+msgstr "संस्थापन हटा रहा है"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:58
+msgid "Select language to uninstall:"
+msgstr "चुने हुए भाषा को हटाएंः"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:65
+msgid "Language Selector"
+msgstr "भाषा चयनकर्ता"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:83
+#: ../LanguageSelector/qt/QtLanguageSelector.py:311
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"किसी साफ्टवेयर को संस्थापित करना या हटाना असम्भव है. कृपया पैकेज प्रबंधक "
+"\"Adept\" का उपयोग करें या टर्मिनल में जाकर \"sudo apt-get install -f\" को "
+"चलाएं ताकि इस समस्या को ठीक किया जा सके."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+msgid "Default system language:"
+msgstr "डिफाल्ट भाषा तंत्रः"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+msgid "Set System Language"
+msgstr "तंत्र की भाषा नियत करें"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+msgid "Keyboard input method:"
+msgstr "कुंजीपटल निवेश पद्धतिः"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:122
+#: ../LanguageSelector/qt/QtLanguageSelector.py:125
+#: ../data/LanguageSelector.ui.h:13
+msgid "Cancel"
+msgstr "रद्द"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+msgid "Select language to install:"
+msgstr "संस्थापना हेतु भाषा चुनेः"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:124
+msgid "Install"
+msgstr "संस्थापित करे"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:213
+msgid "Already installed"
+msgstr "पहले से संस्थापित"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:217
+msgid "Partially Installed"
+msgstr "आंशिक संस्थापित"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:221
+msgid "Not installed"
+msgstr "संस्थापित नहीं है"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+#, python-format
+msgid "Default system Language now set to %s."
+msgstr "अब से डिफाल्ट तंत्र भाषा %s नियत है."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+msgid "Language Set"
+msgstr "भाषा नियत हो गया"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+#, python-format
+msgid ""
+"Translations and support have now been installed for %s.  Select them from "
+"the Add Language button."
+msgstr ""
+"%s हेतु अनुवाद तथा समर्थन संस्थापित नहीं है। इसे भाषा जोड़े बटन से चुने।"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+msgid "Language Installed"
+msgstr "भाषा संस्थापित"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+#, python-format
+msgid "Translations and support have now been uninstalled for %s."
+msgstr "%s के लिए अनुवाद तथा समर्थन हटाया जा रहा है।"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+msgid "Language Uninstalled"
+msgstr "भाषा हटाया जा रहा है"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+msgid "Failed to set system language."
+msgstr "तंत्र भाषा को नियत करने में विफल."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+msgid "Language Not Set"
+msgstr "भाषा नियत नहीं है"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+msgid "Please run this software with administrative rights."
+msgstr "कृपया इस साफ्टवेयर को प्रशासनिक अधिकार के साथ चलाएं."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+msgid "Not Root User"
+msgstr "रुट प्रयोक्ता नहीं है"
+
+#: ../data/LanguageSelector.ui.h:1
+msgid "<b>Example</b>"
+msgstr "<b>उदाहरण</b>"
+
+#: ../data/LanguageSelector.ui.h:2
+msgid ""
+"<big><b>Checking available language support</b></big>\n"
+"\n"
+"The availability of translations or writing aids can differ between "
+"languages."
+msgstr ""
+"<बड़ा><b>उपलब्ध भाषा समर्थन की जाँच करें</b></बड़ा>\n"
+"\n"
+"The availability of translations or writing aids can differ between "
+"languages."
+
+#: ../data/LanguageSelector.ui.h:5
+msgid "<small>Changes take effect next time you log in.</small>"
+msgstr "<छोटा>आपके अगले लाँगइन से परिवर्तन प्रभावित होगा।</छोटा>"
+
+#: ../data/LanguageSelector.ui.h:6
+msgid ""
+"<small>Drag languages to arrange them in order of preference.\n"
+"Changes take effect next time you log in.</small>"
+msgstr ""
+"<छोटा>प्राथमिकतानुसार भाषा को खींचकर व्यवस्थित करें.\n"
+"आपके अगले लाँगइन से परिवर्तन प्रभावित होगा.</छोटा>"
+
+#: ../data/LanguageSelector.ui.h:8
+msgid ""
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
+msgstr ""
+"<छोटा>चालू करने तथा लाँगइन पट हेतु समान भाषा का उपयोग करेंगें.</छोटा>"
+
+#: ../data/LanguageSelector.ui.h:9
+msgid ""
+"<small>Uses the same text format choice for startup and the login "
+"screen.</small>"
+msgstr ""
+"<छोटे>आरंभ करने तथा लाँगइन स्क्रीन हेतु समान मूल-पाठ फाँरमेट कर चुनाव "
+"करें.</छोटे>"
+
+#: ../data/LanguageSelector.ui.h:10
+msgid ""
+"Additional fonts for this language which might be of general interest, e.g. "
+"decorative fonts for printing documents."
+msgstr ""
+"इस भाषा के लिए समान्य रुचि जैसे दस्तावेज छपाई हेतु सजावती फाँन्ट, के लिए "
+"अतिरिक्त फाँन्ट"
+
+#: ../data/LanguageSelector.ui.h:11
+msgid "Apply Changes"
+msgstr "परिवर्तनों को लागू करें"
+
+#: ../data/LanguageSelector.ui.h:12
+msgid "Apply System-Wide..."
+msgstr "पूरे तंत्र में लागू करें..."
+
+#: ../data/LanguageSelector.ui.h:14
+msgid "Components:"
+msgstr "अवयव:"
+
+#: ../data/LanguageSelector.ui.h:15
+msgid "Currency:"
+msgstr "मुद्रा:"
+
+#: ../data/LanguageSelector.ui.h:16
+msgid "Date:"
+msgstr "तिथि"
+
+#: ../data/LanguageSelector.ui.h:17
+msgid "Display numbers, dates and currency amounts in the usual format for:"
+msgstr "समान्य फाँरमेट हेतु संख्या, तिथि, मुद्रा मात्रा को प्रदर्शित करेंः"
+
+#: ../data/LanguageSelector.ui.h:18
+msgid "Extra fonts"
+msgstr "अतिरिक्त फाँन्ट"
+
+#: ../data/LanguageSelector.ui.h:19
+msgid "Input methods"
+msgstr "निवेश पद्धति"
+
+#: ../data/LanguageSelector.ui.h:20
+msgid "Install / Remove Languages..."
+msgstr "भाषा को संस्थापित करें/हटाएं..."
+
+#: ../data/LanguageSelector.ui.h:21
+msgid "Installed Languages"
+msgstr "भाषा संस्थापित हो गया"
+
+#: ../data/LanguageSelector.ui.h:22
+msgid "Keyboard input method system:"
+msgstr "कुंजीपटल निवेश पद्धति तंत्रः"
+
+#: ../data/LanguageSelector.ui.h:24
+msgid "Language & Text"
+msgstr "भाषा & पाठ"
+
+#: ../data/LanguageSelector.ui.h:25
+msgid "Language for menus and windows:"
+msgstr "सूची तथा खिड़की हेतु भाषाः"
+
+#: ../data/LanguageSelector.ui.h:26
+msgid "Number:"
+msgstr "संख्या:"
+
+#: ../data/LanguageSelector.ui.h:27
+msgid "Spellchecking and writing aids"
+msgstr "वर्तनी जाँच तथा लेखन उपकरण"
+
+#: ../data/LanguageSelector.ui.h:28
+msgid "Text"
+msgstr "पाठ"
+
+#: ../data/LanguageSelector.ui.h:29
+msgid "Translations"
+msgstr "अनुवाद"
+
+#: ../data/LanguageSelector.ui.h:30
+msgid "Translations for your desktop."
+msgstr "डेक्सटाँप हेतु अनुवाद."
+
+#: ../data/LanguageSelector.ui.h:31
+msgid ""
+"When a language is installed, individual users can choose it in their "
+"Language settings."
+msgstr ""
+"जब एक भाषा संस्थापित होता है, तो प्रत्येक प्रयोक्ता इसमें से अपने भाषा "
+"विन्यास को चुन सकते हैं."
+
+#: ../data/LanguageSelector.ui.h:32
+msgid ""
+"Word lists, dictionaries, thesauruses, etc. which can help typing by "
+"highlighting, correcting or suggesting words."
+msgstr ""
+"शब्द सूची, शब्दकोश, विश्वकोश इत्यादि जो आपको टंकण में आलोकन करने, सुधारने या "
+"शब्दो को सुझाने में आपकी मदद करेगा।"
+
+#: ../data/language-selector.desktop.in.h:1
+#: ../data/qt-language-selector.desktop.in.h:1
+msgid "Configure multiple and native language support on your system"
+msgstr "अपने तंत्र पर एकाधिक देशी भाषा समर्थन का विन्यास करें"
+
+#: ../data/language-selector.desktop.in.h:2
+#: ../data/qt-language-selector.desktop.in.h:2
+msgid "Language Support"
+msgstr "भाषा समर्थन"
+
+#. Name
+#: ..//data/incomplete-language-support-gnome.note.in:5
+#: ..//data/incomplete-language-support-qt.note.in:5
+msgid "Incomplete Language Support"
+msgstr "अपूर्ण भाषा समर्थन"
+
+#. Description
+#: ..//data/incomplete-language-support-gnome.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
+msgstr ""
+"आपके द्वारा चुने गए भाषा हेतु भाषा समर्थन अपूर्ण प्रतिक होता है. आप छुटे हुए "
+"घटक को संस्थापित करने हेतु \"इस कार्रवाई को चलाएं\" पर क्लिक कर दिए गए "
+"निर्देशों का पालन करें. इसके लिए सक्रिय इंटरनेट संबंध की जरुरत होगी. इसे आप "
+"बाद में कभी करना चाहते हैं, तो कृपया \"तंत्र -> प्रशासन -> भाषा समर्थन\" का "
+"इस्तेमाल करें."
+
+#. Description
+#: ..//data/incomplete-language-support-qt.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
+msgstr ""
+"आपके द्वारा चुने गए भाषा हेतु भाषा समर्थन अपूर्ण प्रतिक होता है. आप छुटे हुए "
+"घटक को संस्थापित करने हेतु \"इस कार्रवाई को चलाएं\" पर क्लिक कर दिए गए "
+"निर्देशों का पालन करें. इसके लिए सक्रिय इंटरनेट संबंध की जरुरत होगी. इसे आप "
+"बाद में कभी करना चाहते हैं, तो कृपया \"तंत्र विन्यास -> क्षेत्र & भाषा\" का "
+"इस्तेमाल करें."
+
+#. Name
+#: ../data/restart_session_required.note.in:5
+msgid "Session Restart Required"
+msgstr "सत्र पुनःआरंभ करने की जरुरत है"
+
+#. Description
+#: ../data/restart_session_required.note.in:6
+msgid "The new language settings will take effect once you have logged out."
+msgstr "जब आप एक बार लाँगआउट हो जाएंगे तब नया भाषा विन्यास प्रभावित होगा."
+
+#: ../gnome-language-selector:25
+msgid "don't verify installed language support"
+msgstr "भाषा समर्थन के संस्थापन को सत्यापित न करें"
+
+#: ../gnome-language-selector:28 ../check-language-support:22
+msgid "alternative datadir"
+msgstr "वैकल्पिक डाटानिर्देशिका"
+
+#: ../fontconfig-voodoo:18
+msgid "Aborting"
+msgstr "छोड़ रहा है"
+
+#: ../fontconfig-voodoo:26
+msgid "Force even when a configuration exists"
+msgstr "वर्तमान विन्यास के बावजूद लागू करें"
+
+#: ../fontconfig-voodoo:28
+msgid "Set fontconfig voodoo for the selected language"
+msgstr "चुने गए भाषा हेतु fontconfig voodoo नियत करें"
+
+#: ../fontconfig-voodoo:32
+msgid ""
+"Guess a configuration based on the LANGUAGE environment. Sets the config to "
+"'none' if nothing suitable was found"
+msgstr ""
+"भाषा वातावरण के आधार पर विन्यास का अनुमान करें. यदि उपयुक्त नहीं मिले तो "
+"विन्यास में 'कोई नहीं' नियत करें."
+
+#: ../fontconfig-voodoo:37
+msgid "List the available fontconfig-voodoo configs"
+msgstr "fontconfig-voodoo विन्यास की सूची उपलब्ध है"
+
+#: ../fontconfig-voodoo:40
+msgid "Show the current fontconfig-voodoo config"
+msgstr "वर्तमान fontconfig-voodoo विन्यास को दिखाएं"
+
+#: ../fontconfig-voodoo:43
+msgid "Remove the current fontconfig-voodoo config"
+msgstr "वर्तमान fontconfig-voodoo विन्यास को हटाएं"
+
+#: ../fontconfig-voodoo:65
+msgid "Unconfigured"
+msgstr "अविन्यस्त"
+
+#: ../fontconfig-voodoo:77
+msgid "A configuration exists already. Use '--force' to overwrite it. "
+msgstr ""
+"पूर्व से विन्यास उपस्थित है। उसके उपर लिखने हेतु '--force' का उपयोग करें. "
+
+#: ../fontconfig-voodoo:96
+msgid "No fontconfig-voodoo configuration found for the selected locale"
+msgstr "चुने गए स्थानियता में कोई भी fontconfig-voodoo नहीं पाय गया"
+
+#: ../check-language-support:19
+msgid "target language code"
+msgstr "भाषा कोड लक्ष्य"
+
+#: ../check-language-support:23
+msgid "check for the given package(s) only -- separate packagenames by comma"
+msgstr "केवल दिए गए पैकेज को जाँचे -- पैकेजनाम को कौमा द्वारा अलग करें"
+
+#: ../check-language-support:25
+msgid "check all available languages"
+msgstr "सभी उपलब्ध भाषा को जाँचे"
+
+#: ../check-language-support:28
+msgid "show installed packages as well as missing ones"
+msgstr "संस्थापित पैकेज के साथ साथ छूटे हुए को भी दिखाएं"
+
+#~ msgid "The list of available languages on the system has been updated."
+#~ msgstr "तंत्र में उपलब्ध भाषा की सूची अद्यतन है."
+
+#~ msgid ""
+#~ "If you need to type in languages, which require more complex input methods "
+#~ "than just a simple key to letter mapping, you may want to enable this "
+#~ "function.\n"
+#~ "For example, you will need this function for typing Chinese, Japanese, "
+#~ "Korean or Vietnamese.\n"
+#~ "The recommended value for Ubuntu is \"ibus\".\n"
+#~ "If you want to use alternative input method systems, install the "
+#~ "corresponding packages first and then choose the desired system here."
+#~ msgstr ""
+#~ "यदि आपको किसी भाषा में टंकण की आवश्यकता है, जिसके लिए समान्य कुंजी के अक्षर "
+#~ "मानचित्र से कहीं ज्यादा अधिक जटिल निवेश पद्धति की जरुरत होती है, तो आप इस "
+#~ "प्रकार्य को समर्थ करना चाहेंगे.\n"
+#~ "उदाहरण के लिए, आपको इस प्रकार्य की आवश्यकता चीनी, जापानी, कोरियन या वियतनामी "
+#~ "में टंकण हेतु पड़ेगी.\n"
+#~ "यदि आप तंत्र निवेश पद्धति के विकल्प का इस्तेमाल करना चाहते हैं, तो पहले "
+#~ "संबंधित पैकेज को संस्थापित करें तथा आवश्यक तंत्र को यहाँ चुने."
+
+#~ msgid ""
+#~ "This setting only affects the language your desktop and applications are "
+#~ "displayed in. It does not set the system environment, like currency or date "
+#~ "format settings. For that, use the settings in the Text tab.\n"
+#~ "The order of the values displayed here decides which translations to use for "
+#~ "your desktop. If translations for the first language are not available, the "
+#~ "next one in this list will be tried. The last entry of this list is always "
+#~ "\"English\".\n"
+#~ "Every entry below \"English\" will be ignored."
+#~ msgstr ""
+#~ "यह विन्यास केवल भाषा आपके डेक्सटाँप तथा उसमें दिखने वाले अनुप्रयोग को "
+#~ "प्रभावित करेगा. यह तंत्र के वातावरण जैसे मुद्रा या तिथि फाँरमेट विन्यास को "
+#~ "प्रभावित नहीं करेगा. इसके लिए पाठ टैब में विन्यास का उपयोग करें.\n"
+#~ "भाषा उपलब्ध नहीं है, इस सूची के ठीक अगले की कोशिश होगी। इस सूची की अंतिम "
+#~ "प्रविष्टि हमेशा \"अंग्रेजी\" होगी.\n"
+#~ "\"अंग्रेजी\" के नीचे की प्रत्येक प्रविष्टि की उपेक्षा की जाएगी."
+
+#~ msgid ""
+#~ "This will set the system environment like shown below and will also affect "
+#~ "the preferred paper format and other territory specific settings.\n"
+#~ "If you want to display the desktop in a different language than this, please "
+#~ "select it in the \"Language\" tab.\n"
+#~ "Hence you should set this to a sensible value for the territory you are "
+#~ "located in."
+#~ msgstr ""
+#~ "यह तंत्र वातावरण, जैसा कि नीचे दिखाया गया है, को नियत करेगा तथा अधिमान कागज "
+#~ "फारमेट तथा क्षेत्र के विशिष्ट विन्यास को को प्रभावित करेगा.\n"
+#~ "यदि आप इस भाषा के अतिरिक्त अन्य किसी भाषा में डेक्सटाँप को देखना चाहते हैं, "
+#~ "तो कृपया इसे \"भाषा\" टैब से चुने.\n"
+#~ "अतः आप जिस क्षेत्र के है उसके संवेदनशील मुल्य को नियत करें."

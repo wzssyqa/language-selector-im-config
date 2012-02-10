@@ -1,0 +1,508 @@
+# Gujarati translation for language-selector
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the language-selector package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: language-selector\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-24 13:55+0000\n"
+"PO-Revision-Date: 2010-09-24 17:22+0000\n"
+"Last-Translator: Arne Goetje <Unknown>\n"
+"Language-Team: Gujarati <gu@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2010-10-05 09:20+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+"Language: gu\n"
+
+#. Hack for Chinese langpack split
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:47
+msgid "Chinese (simplified)"
+msgstr ""
+
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:49
+msgid "Chinese (traditional)"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
+#: ../LanguageSelector/qt/QtLanguageSelector.py:98
+msgid "No language information available"
+msgstr "કોઇ ભાષાકીય માહિતી ઉપલબ્ધ નથી"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
+#: ../LanguageSelector/qt/QtLanguageSelector.py:99
+msgid ""
+"The system does not have information about the available languages yet. Do "
+"you want to perform a network update to get them now? "
+msgstr ""
+"સિસ્ટમને ઉપલ્બધ ભાષાઓ વિશે હજી જાણકારી નથી. શું તમે તે મેળવવા માટે નેટવર્ક "
+"અપડેટ કરવા માગો છો? "
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
+#: ../LanguageSelector/qt/QtLanguageSelector.py:93
+msgid "_Update"
+msgstr "અપડેટ (_U)"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:307
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:345
+#: ../data/LanguageSelector.ui.h:23
+msgid "Language"
+msgstr "ભાષા"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+msgid "Installed"
+msgstr "સ્થાપિત"
+
+#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:383
+#, python-format
+msgid "%(INSTALL)d to install"
+msgid_plural "%(INSTALL)d to install"
+msgstr[0] "%(INSTALL)d સ્થાપિત થશે"
+msgstr[1] "%(INSTALL)d સ્થાપિત થશે"
+
+#. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:385
+#, python-format
+msgid "%(REMOVE)d to remove"
+msgid_plural "%(REMOVE)d to remove"
+msgstr[0] "%(REMOVE)d કાઢી નખાશે"
+msgstr[1] "%(REMOVE)d કાઢી નખાશે"
+
+#. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
+#, python-format
+msgid "%s, %s"
+msgstr "%s, %s"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:509
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:703
+#: ../LanguageSelector/qt/QtLanguageSelector.py:82
+#: ../LanguageSelector/qt/QtLanguageSelector.py:310
+#: ../check-language-support:52
+msgid "Software database is broken"
+msgstr "સોફ્ટવેર ડેટાબેઝ બગડી ગયો છે"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:510
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:704
+#: ../check-language-support:53
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+msgid "Could not install the selected language support"
+msgstr "પસંદ કરેલી ભાષાની સુવિધા સ્થાપિત કરી શક્યા નહિ"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:556
+msgid ""
+"This is perhaps a bug of this application. Please file a bug report at "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
+msgstr ""
+"આ કદાચ આ કાર્યક્રમમાં રહેલ બગ છે. તમે "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug માં બગ "
+"માહિતી પૂરી પાડી શકો છો."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+msgid "Could not install the full language support"
+msgstr "સંપૂર્ણ ભાષાકીય સુવિધા સ્થાપિત કરી શક્યા નહિ"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:581
+msgid ""
+"Usually this is related to an error in your software archive or software "
+"manager. Check your software preferences in the System > Administration menu."
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:660
+#: ../LanguageSelector/qt/QtLanguageSelector.py:164
+msgid "The language support is not installed completely"
+msgstr "ભાષાકીય સુવિધા સંપૂર્ણ પણે સ્થાપિત થઇ નથી"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:661
+#: ../LanguageSelector/qt/QtLanguageSelector.py:165
+msgid ""
+"Some translations or writing aids available for your chosen languages are "
+"not installed yet. Do you want to install them now?"
+msgstr ""
+"તમે પસંદ કરેલી ભાષા માટે કેટલાક ભાષાંતરો અથવા લખાણ ઉપકરણો સ્થાપિત થયેલા નથી. "
+"શું તમે તે અત્યારે સ્થાપિત કરવા માગો છો?"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:664
+#: ../LanguageSelector/qt/QtLanguageSelector.py:94
+#: ../LanguageSelector/qt/QtLanguageSelector.py:160
+msgid "_Remind Me Later"
+msgstr "મને પછી યાદ કરાવો (_R)"
+
+#. FIXME: add "details"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:665
+#: ../LanguageSelector/qt/QtLanguageSelector.py:159
+msgid "_Install"
+msgstr "સ્થાપિત કરો (_I)"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
+msgid "Details"
+msgstr "વિગતો"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:57
+msgid "Uninstall"
+msgstr "વિસ્થાપિત કરો"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:58
+msgid "Select language to uninstall:"
+msgstr "સ્થાપિત કરવા માટે ભાષા પસંદ કરોઃ"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:65
+msgid "Language Selector"
+msgstr "ભાષા પસંદગીકાર"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:83
+#: ../LanguageSelector/qt/QtLanguageSelector.py:311
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+msgid "Default system language:"
+msgstr "મૂળભુત સિસ્ટમ ભાષાઃ"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+msgid "Set System Language"
+msgstr "સિસ્ટમની ભાષા નક્કી કરો"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+msgid "Keyboard input method:"
+msgstr ""
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:122
+#: ../LanguageSelector/qt/QtLanguageSelector.py:125
+#: ../data/LanguageSelector.ui.h:13
+msgid "Cancel"
+msgstr "રદ્દ કરો"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+msgid "Select language to install:"
+msgstr "સ્થાપન કરવા માટે ભાષા પસંદ કરોઃ"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:124
+msgid "Install"
+msgstr "સ્થાપિત કરો"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:213
+msgid "Already installed"
+msgstr "પહેલેથી જ સ્થાપિત છે"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:217
+msgid "Partially Installed"
+msgstr "અડધીપડધી સ્થાપિત છે"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:221
+msgid "Not installed"
+msgstr "સ્થાપિત નથી"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+#, python-format
+msgid "Default system Language now set to %s."
+msgstr "સિસ્ટમની મૂળભુત ભાષા હવે %s છે."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+msgid "Language Set"
+msgstr "ભાષા સેટ"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+#, python-format
+msgid ""
+"Translations and support have now been installed for %s.  Select them from "
+"the Add Language button."
+msgstr ""
+"%s માટેના ભાષાંતર અને સુવિધા સ્થાપિત કરવામાં આવી છે. તેમને ભાષા ઉમેરો બટન "
+"દ્વારા પસંદ કરો."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+msgid "Language Installed"
+msgstr "ભાષ। સ્થાપિત થઇ"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+#, python-format
+msgid "Translations and support have now been uninstalled for %s."
+msgstr "%s માટેના ભાષાંતર અને સુવિધા વિસ્થાપિત કરવામાં આવી છે"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+msgid "Language Uninstalled"
+msgstr "ભાષા વિસ્થાપિત કરવામાં આવી"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+msgid "Failed to set system language."
+msgstr "સિસ્ટમ ભાષા સંગ્રહવામાં નિષ્ફળ ગયા."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+msgid "Language Not Set"
+msgstr "ભાષા નક્કી કરેલ નથી"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+msgid "Please run this software with administrative rights."
+msgstr "આ સોફ્ટવેરને વહીવટી હક્કો સાથે ફરી ચલાવો."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+msgid "Not Root User"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:1
+msgid "<b>Example</b>"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:2
+msgid ""
+"<big><b>Checking available language support</b></big>\n"
+"\n"
+"The availability of translations or writing aids can differ between "
+"languages."
+msgstr ""
+"<big><b>ઉપલબ્ધ ભાષાકીય સુવિધા ચકાસી રહ્યા છીએ</b></big>\n"
+"\n"
+"લખાણ ઉપકરણો અને ભાષાંતરની ઉપલબ્ધતા વિવિધ ભાષાઓ વચ્ચે જુદી જુદી હોઇ શકે છે."
+
+#: ../data/LanguageSelector.ui.h:5
+msgid "<small>Changes take effect next time you log in.</small>"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:6
+msgid ""
+"<small>Drag languages to arrange them in order of preference.\n"
+"Changes take effect next time you log in.</small>"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:8
+msgid ""
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:9
+msgid ""
+"<small>Uses the same text format choice for startup and the login "
+"screen.</small>"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:10
+msgid ""
+"Additional fonts for this language which might be of general interest, e.g. "
+"decorative fonts for printing documents."
+msgstr ""
+"આ ભાષા માટેના વધારાના ફોન્ટ જે સામાન્ય વપરાશમાં આવી શકે, દા.ત. છાપન માટેના "
+"શૃંગારિક ફોન્ટ"
+
+#: ../data/LanguageSelector.ui.h:11
+msgid "Apply Changes"
+msgstr "ફેરફારો અમલમાં મૂકો"
+
+#: ../data/LanguageSelector.ui.h:12
+msgid "Apply System-Wide..."
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:14
+msgid "Components:"
+msgstr "વિભાગોઃ"
+
+#: ../data/LanguageSelector.ui.h:15
+msgid "Currency:"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:16
+msgid "Date:"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:17
+msgid "Display numbers, dates and currency amounts in the usual format for:"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:18
+msgid "Extra fonts"
+msgstr "વધારાના ફોન્ટ"
+
+#: ../data/LanguageSelector.ui.h:19
+msgid "Input methods"
+msgstr "લખાણ પદ્ધતિઓ"
+
+#: ../data/LanguageSelector.ui.h:20
+msgid "Install / Remove Languages..."
+msgstr "ભાષાઓ સ્થાપિત / વિસ્થાપિત કરો"
+
+#: ../data/LanguageSelector.ui.h:21
+msgid "Installed Languages"
+msgstr "સ્થાપિત ભાષાઓ"
+
+#: ../data/LanguageSelector.ui.h:22
+msgid "Keyboard input method system:"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:24
+msgid "Language & Text"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:25
+msgid "Language for menus and windows:"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:26
+msgid "Number:"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:27
+msgid "Spellchecking and writing aids"
+msgstr "જોડણી ચકાસક અને લખાણ ઉપકરણો"
+
+#: ../data/LanguageSelector.ui.h:28
+msgid "Text"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:29
+msgid "Translations"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:30
+msgid "Translations for your desktop."
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:31
+msgid ""
+"When a language is installed, individual users can choose it in their "
+"Language settings."
+msgstr ""
+"જ્યારે ભાષા સ્થાપિત થાય છે, ત્યારે પ્રત્યેક વપરાશકર્તા તેને તેમના ભાષાકીય "
+"રુપરેખાંકનોમાં પસંદ કરી શકે છે."
+
+#: ../data/LanguageSelector.ui.h:32
+msgid ""
+"Word lists, dictionaries, thesauruses, etc. which can help typing by "
+"highlighting, correcting or suggesting words."
+msgstr ""
+"શબ્દયાદી, શબ્દકોષ, થીસોરસ ઇત્યાદિ. જે લખતી વખતે હાઇલાઇટ કરી, સુધારી અને "
+"સૂચનો આપી મદદ કરી શકે છે."
+
+#: ../data/language-selector.desktop.in.h:1
+#: ../data/qt-language-selector.desktop.in.h:1
+msgid "Configure multiple and native language support on your system"
+msgstr "તમારી સિસ્ટમ પર વિવિધ અને મૂળ ભાષાની સુવિધા રુપરેખાંકિત કરો"
+
+#: ../data/language-selector.desktop.in.h:2
+#: ../data/qt-language-selector.desktop.in.h:2
+msgid "Language Support"
+msgstr "ભાષાકીય સુવિધા"
+
+#. Name
+#: ..//data/incomplete-language-support-gnome.note.in:5
+#: ..//data/incomplete-language-support-qt.note.in:5
+msgid "Incomplete Language Support"
+msgstr "અધૂરી ભાષાકીય સુવિધા"
+
+#. Description
+#: ..//data/incomplete-language-support-gnome.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
+msgstr ""
+
+#. Description
+#: ..//data/incomplete-language-support-qt.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
+msgstr ""
+
+#. Name
+#: ../data/restart_session_required.note.in:5
+msgid "Session Restart Required"
+msgstr "સત્ર ફરી શરુ કરવુ જરુરી છે"
+
+#. Description
+#: ../data/restart_session_required.note.in:6
+msgid "The new language settings will take effect once you have logged out."
+msgstr "એક વાર તમે લોગઆઉટ કરો, ત્યાર બાદ નવી ભાષાના રુપરેખાંકનો અસરમાં આવશે."
+
+#: ../gnome-language-selector:25
+msgid "don't verify installed language support"
+msgstr "સ્થાપિત ભાષાઓની સુવિધાની ખાત્રી કરવી નહિ"
+
+#: ../gnome-language-selector:28 ../check-language-support:22
+msgid "alternative datadir"
+msgstr ""
+
+#: ../fontconfig-voodoo:18
+msgid "Aborting"
+msgstr "અટકાવી રહ્યા છીએ"
+
+#: ../fontconfig-voodoo:26
+msgid "Force even when a configuration exists"
+msgstr ""
+
+#: ../fontconfig-voodoo:28
+msgid "Set fontconfig voodoo for the selected language"
+msgstr ""
+
+#: ../fontconfig-voodoo:32
+msgid ""
+"Guess a configuration based on the LANGUAGE environment. Sets the config to "
+"'none' if nothing suitable was found"
+msgstr ""
+
+#: ../fontconfig-voodoo:37
+msgid "List the available fontconfig-voodoo configs"
+msgstr ""
+
+#: ../fontconfig-voodoo:40
+msgid "Show the current fontconfig-voodoo config"
+msgstr ""
+
+#: ../fontconfig-voodoo:43
+msgid "Remove the current fontconfig-voodoo config"
+msgstr ""
+
+#: ../fontconfig-voodoo:65
+msgid "Unconfigured"
+msgstr "રુપરેખાંકિત થયેલ નથી"
+
+#: ../fontconfig-voodoo:77
+msgid "A configuration exists already. Use '--force' to overwrite it. "
+msgstr ""
+
+#: ../fontconfig-voodoo:96
+msgid "No fontconfig-voodoo configuration found for the selected locale"
+msgstr ""
+
+#: ../check-language-support:19
+msgid "target language code"
+msgstr ""
+
+#: ../check-language-support:23
+msgid "check for the given package(s) only -- separate packagenames by comma"
+msgstr ""
+
+#: ../check-language-support:25
+msgid "check all available languages"
+msgstr ""
+
+#: ../check-language-support:28
+msgid "show installed packages as well as missing ones"
+msgstr ""
+
+#~ msgid "The list of available languages on the system has been updated."
+#~ msgstr "તમારી સિસ્ટમ પર ઉપલબ્ધ ભાષાઓની યાદીને સુધારવામાં આવી છે."

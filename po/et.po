@@ -1,0 +1,582 @@
+# Estonian translation for language-selector
+# Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
+# This file is distributed under the same license as the language-selector package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: language-selector\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-24 13:55+0000\n"
+"PO-Revision-Date: 2010-09-24 17:23+0000\n"
+"Last-Translator: Colin Watson <cjwatson@canonical.com>\n"
+"Language-Team: Estonian <et@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2010-10-05 09:20+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+"Language: et\n"
+
+#. Hack for Chinese langpack split
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:47
+msgid "Chinese (simplified)"
+msgstr "Hiina (lihtsustatud)"
+
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:49
+msgid "Chinese (traditional)"
+msgstr "Hiina (traditsiooniline)"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
+#: ../LanguageSelector/qt/QtLanguageSelector.py:98
+msgid "No language information available"
+msgstr "Andmed keelte kohta puuduvad"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
+#: ../LanguageSelector/qt/QtLanguageSelector.py:99
+msgid ""
+"The system does not have information about the available languages yet. Do "
+"you want to perform a network update to get them now? "
+msgstr ""
+"Süsteemil pole veel teavet saadaolevate keelte kohta. Kas tahad andmeid kohe "
+"üle võrgu uuendada? "
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
+#: ../LanguageSelector/qt/QtLanguageSelector.py:93
+msgid "_Update"
+msgstr "_Uuenda"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:307
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:345
+#: ../data/LanguageSelector.ui.h:23
+msgid "Language"
+msgstr "Keel"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+msgid "Installed"
+msgstr "Paigaldatud"
+
+#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:383
+#, python-format
+msgid "%(INSTALL)d to install"
+msgid_plural "%(INSTALL)d to install"
+msgstr[0] "%(INSTALL)d paigaldada"
+msgstr[1] "%(INSTALL)d paigaldada"
+
+#. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:385
+#, python-format
+msgid "%(REMOVE)d to remove"
+msgid_plural "%(REMOVE)d to remove"
+msgstr[0] "%(REMOVE)d eemaldada"
+msgstr[1] "%(REMOVE)d eemaldada"
+
+#. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
+#, python-format
+msgid "%s, %s"
+msgstr "%s, %s"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:509
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:703
+#: ../LanguageSelector/qt/QtLanguageSelector.py:82
+#: ../LanguageSelector/qt/QtLanguageSelector.py:310
+#: ../check-language-support:52
+msgid "Software database is broken"
+msgstr "Tarkvara andmebaas on katki"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:510
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:704
+#: ../check-language-support:53
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"Tarkvara pole võimalik paigaldada ega eemaldada. Selle probleemi "
+"lahendamiseks kasuta palun paketihaldurit \"Synaptic\" või terminalis käsku "
+"\"sudo apt-get install -f\"."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+msgid "Could not install the selected language support"
+msgstr "Ei saanud paigaldada toetust valitud keele tarvis"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:556
+msgid ""
+"This is perhaps a bug of this application. Please file a bug report at "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
+msgstr ""
+"See võib olla selle rakenduse viga. Palun raporteeri sellest veast aadressil "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+msgid "Could not install the full language support"
+msgstr "Ei saanud paigaldada valitud keele täielikku toetust"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:581
+msgid ""
+"Usually this is related to an error in your software archive or software "
+"manager. Check your software preferences in the System > Administration menu."
+msgstr ""
+"Tavaliselt on see seotud tarkvaraallika või tarkvarahalduri veaga. Kontrolli "
+"tarkvara eelistusi menüüst Arvuti > Haldamine."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:660
+#: ../LanguageSelector/qt/QtLanguageSelector.py:164
+msgid "The language support is not installed completely"
+msgstr "Keele toetus ei ole täielikult paigaldatud"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:661
+#: ../LanguageSelector/qt/QtLanguageSelector.py:165
+msgid ""
+"Some translations or writing aids available for your chosen languages are "
+"not installed yet. Do you want to install them now?"
+msgstr ""
+"Mõned su valitud keelte tõlked või kirjutusabid ei ole veel paigaldatud. Kas "
+"soovid need praegu paigaldada?"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:664
+#: ../LanguageSelector/qt/QtLanguageSelector.py:94
+#: ../LanguageSelector/qt/QtLanguageSelector.py:160
+msgid "_Remind Me Later"
+msgstr "_Tuleta mulle hiljem meelde"
+
+#. FIXME: add "details"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:665
+#: ../LanguageSelector/qt/QtLanguageSelector.py:159
+msgid "_Install"
+msgstr "_Paigalda"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
+msgid "Details"
+msgstr "Üksikasjad"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:57
+msgid "Uninstall"
+msgstr "Eemalda"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:58
+msgid "Select language to uninstall:"
+msgstr "Vali keel, mida eemaldada:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:65
+msgid "Language Selector"
+msgstr "Keelevalija"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:83
+#: ../LanguageSelector/qt/QtLanguageSelector.py:311
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"Tarkvara pole võimalik paigaldada ega eemaldada. Selle probleemi "
+"lahendamiseks kasuta palun pakihaldurit \"Adept\" või käivita terminalis "
+"käsk \"sudo apt-get install -f\"."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+msgid "Default system language:"
+msgstr "Süsteemi vaikimisi keel:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+msgid "Set System Language"
+msgstr "Määra süsteemi keel"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+msgid "Keyboard input method:"
+msgstr "Klahvistiku sisestusmall:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:122
+#: ../LanguageSelector/qt/QtLanguageSelector.py:125
+#: ../data/LanguageSelector.ui.h:13
+msgid "Cancel"
+msgstr "Katkesta"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+msgid "Select language to install:"
+msgstr "Vali keel, mida paigaldada:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:124
+msgid "Install"
+msgstr "Paigalda"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:213
+msgid "Already installed"
+msgstr "Juba paigaldatud"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:217
+msgid "Partially Installed"
+msgstr "Osaliselt paigaldatud"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:221
+msgid "Not installed"
+msgstr "Pole paigaldatud"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+#, python-format
+msgid "Default system Language now set to %s."
+msgstr "Süsteemi vaikimisi keeleks on nüüd määratud %s."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+msgid "Language Set"
+msgstr "Keel määratud"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+#, python-format
+msgid ""
+"Translations and support have now been installed for %s.  Select them from "
+"the Add Language button."
+msgstr ""
+"Tõlked ja toetus %s keele jaoks on nüüd paigaldatud. Vali need 'Lisa keel' "
+"nupu abil."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+msgid "Language Installed"
+msgstr "Keel on paigaldatud"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+#, python-format
+msgid "Translations and support have now been uninstalled for %s."
+msgstr "Tõlked ja toetus %s keele jaoks on nüüd eemaldatud."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+msgid "Language Uninstalled"
+msgstr "Keel on eemaldatud"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+msgid "Failed to set system language."
+msgstr "Süsteemi keele määramine ebaõnnestus."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+msgid "Language Not Set"
+msgstr "Keel on määramata"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+msgid "Please run this software with administrative rights."
+msgstr "Palun käivita see rakendus administraatori õigustega."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+msgid "Not Root User"
+msgstr "Pole juurkasutaja"
+
+#: ../data/LanguageSelector.ui.h:1
+msgid "<b>Example</b>"
+msgstr "<b>Näide</b>"
+
+#: ../data/LanguageSelector.ui.h:2
+msgid ""
+"<big><b>Checking available language support</b></big>\n"
+"\n"
+"The availability of translations or writing aids can differ between "
+"languages."
+msgstr ""
+"<big><b>Keeletoetuste saadavuskontroll</b></big>\n"
+"\n"
+"Tõlgete ja kirjutusabide saadavalolek võib olla keeleti erinev."
+
+#: ../data/LanguageSelector.ui.h:5
+msgid "<small>Changes take effect next time you log in.</small>"
+msgstr "<small>Muudatused jõustuvad järgmisel sisselogimisel.</small>"
+
+#: ../data/LanguageSelector.ui.h:6
+msgid ""
+"<small>Drag languages to arrange them in order of preference.\n"
+"Changes take effect next time you log in.</small>"
+msgstr ""
+"<small>Keelte järjestamiseks eelistatavuse järgi lohista neid.\n"
+"Muudatused jõustuvad järgmisel sisselogimisel.</small>"
+
+#: ../data/LanguageSelector.ui.h:8
+msgid ""
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
+msgstr ""
+"<small>Sama keelt kasutatakse käivitumisel ja sisselogimisaknas.</small>"
+
+#: ../data/LanguageSelector.ui.h:9
+msgid ""
+"<small>Uses the same text format choice for startup and the login "
+"screen.</small>"
+msgstr ""
+"<small>Kasutab sama tekstivormingut käivitamisel ja "
+"sisselogimisekraanil.</small>"
+
+#: ../data/LanguageSelector.ui.h:10
+msgid ""
+"Additional fonts for this language which might be of general interest, e.g. "
+"decorative fonts for printing documents."
+msgstr ""
+"Selle keele lisafondid, mis võivad olla üldhuvitavad, nt dekoratiivsed "
+"kirjastiilid dokumentide printimiseks."
+
+#: ../data/LanguageSelector.ui.h:11
+msgid "Apply Changes"
+msgstr "Rakenda muudatused"
+
+#: ../data/LanguageSelector.ui.h:12
+msgid "Apply System-Wide..."
+msgstr "Rakenda kogu süsteemile..."
+
+#: ../data/LanguageSelector.ui.h:14
+msgid "Components:"
+msgstr "Komponendid:"
+
+#: ../data/LanguageSelector.ui.h:15
+msgid "Currency:"
+msgstr "Valuuta:"
+
+#: ../data/LanguageSelector.ui.h:16
+msgid "Date:"
+msgstr "Kuupäev:"
+
+#: ../data/LanguageSelector.ui.h:17
+msgid "Display numbers, dates and currency amounts in the usual format for:"
+msgstr ""
+"Arvusid, kuupäevi ja valuutat kuvatakse vastavalt järgneva keele tavadele:"
+
+#: ../data/LanguageSelector.ui.h:18
+msgid "Extra fonts"
+msgstr "Lisafondid"
+
+#: ../data/LanguageSelector.ui.h:19
+msgid "Input methods"
+msgstr "Sisestusmallid"
+
+#: ../data/LanguageSelector.ui.h:20
+msgid "Install / Remove Languages..."
+msgstr "Keelte paigaldamine ja eemaldamine..."
+
+#: ../data/LanguageSelector.ui.h:21
+msgid "Installed Languages"
+msgstr "Paigaldatud keeled"
+
+#: ../data/LanguageSelector.ui.h:22
+msgid "Keyboard input method system:"
+msgstr "Klavistiku sisestusraamistik:"
+
+#: ../data/LanguageSelector.ui.h:24
+msgid "Language & Text"
+msgstr "Keel & tekst"
+
+#: ../data/LanguageSelector.ui.h:25
+msgid "Language for menus and windows:"
+msgstr "Menüüde ja akende keel:"
+
+#: ../data/LanguageSelector.ui.h:26
+msgid "Number:"
+msgstr "Arvud:"
+
+#: ../data/LanguageSelector.ui.h:27
+msgid "Spellchecking and writing aids"
+msgstr "Õigekiri ja kirjutusabi"
+
+#: ../data/LanguageSelector.ui.h:28
+msgid "Text"
+msgstr "Tekst"
+
+#: ../data/LanguageSelector.ui.h:29
+msgid "Translations"
+msgstr "Tõlked"
+
+#: ../data/LanguageSelector.ui.h:30
+msgid "Translations for your desktop."
+msgstr "Töölauarakenduste tõlked."
+
+#: ../data/LanguageSelector.ui.h:31
+msgid ""
+"When a language is installed, individual users can choose it in their "
+"Language settings."
+msgstr ""
+"Kui keel on paigaldatud, saavad kasutajad seda oma keelesätetest ise muuta."
+
+#: ../data/LanguageSelector.ui.h:32
+msgid ""
+"Word lists, dictionaries, thesauruses, etc. which can help typing by "
+"highlighting, correcting or suggesting words."
+msgstr ""
+"Sõnaloendid, sõnaraamatud, tesaurused jms, mis võivad olla abiks "
+"kirjutamisel, tõstes esile sõnu, neid parandades või soovitades."
+
+#: ../data/language-selector.desktop.in.h:1
+#: ../data/qt-language-selector.desktop.in.h:1
+msgid "Configure multiple and native language support on your system"
+msgstr "Seadista oma süsteemi tarvis lisa- ja emakeele toetus"
+
+#: ../data/language-selector.desktop.in.h:2
+#: ../data/qt-language-selector.desktop.in.h:2
+msgid "Language Support"
+msgstr "Keeletoetus"
+
+#. Name
+#: ..//data/incomplete-language-support-gnome.note.in:5
+#: ..//data/incomplete-language-support-qt.note.in:5
+msgid "Incomplete Language Support"
+msgstr "Mittetäielik keeletoetus"
+
+#. Description
+#: ..//data/incomplete-language-support-gnome.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
+msgstr ""
+"Paistab, et toetus sinu valitud keelele pole täielik. Sa võid puuduvad "
+"komponendid paigaldada klõpsates nupul \"Käivita see tegevus kohe\" ning "
+"järgides juhiseid. Selleks on vaja toimivat internetiühendust. Kui soovid "
+"seda teha hiljem, leiad selle menüüst \"Arvuti -> Haldamine -> Keeletoetus\"."
+
+#. Description
+#: ..//data/incomplete-language-support-qt.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
+msgstr ""
+"Paistab, et toetus sinu valitud keelele pole täielik. Sa võid puuduvad "
+"komponendid paigaldada klõpsates nupul \"Käivita see tegevus kohe\" ning "
+"järgides juhiseid. Selleks on vaja toimivat internetiühendust. Kui soovid "
+"seda teha hiljem, leiad selle menüüst \"Arvuti -> Eelistused -> Piirkond & "
+"keel\"."
+
+#. Name
+#: ../data/restart_session_required.note.in:5
+msgid "Session Restart Required"
+msgstr "Sessioon vajab taaskäivitust"
+
+#. Description
+#: ../data/restart_session_required.note.in:6
+msgid "The new language settings will take effect once you have logged out."
+msgstr "Uus keeleseadistus jõustub pärast väljalogimist."
+
+#: ../gnome-language-selector:25
+msgid "don't verify installed language support"
+msgstr "paigaldatud keele tuge ei kontrollita"
+
+#: ../gnome-language-selector:28 ../check-language-support:22
+msgid "alternative datadir"
+msgstr "alternatiivne andmekataloog"
+
+#: ../fontconfig-voodoo:18
+msgid "Aborting"
+msgstr "Tühistamine"
+
+#: ../fontconfig-voodoo:26
+msgid "Force even when a configuration exists"
+msgstr "Sunni peale isegi kui varasemad seaded on olemas"
+
+#: ../fontconfig-voodoo:28
+msgid "Set fontconfig voodoo for the selected language"
+msgstr "Määra fontconfig voodoo valitud keele jaoks"
+
+#: ../fontconfig-voodoo:32
+msgid ""
+"Guess a configuration based on the LANGUAGE environment. Sets the config to "
+"'none' if nothing suitable was found"
+msgstr ""
+"Aima seadistus keskkonnamuutuja LANGUAGE järgi. Määrab seadistused "
+"nullväärtusele, kui midagi sobivat ei leita"
+
+#: ../fontconfig-voodoo:37
+msgid "List the available fontconfig-voodoo configs"
+msgstr "Loetle saadaolevad fontconfig-voodoo seadistused"
+
+#: ../fontconfig-voodoo:40
+msgid "Show the current fontconfig-voodoo config"
+msgstr "Näita praegust fontconfig-voodoo seadistust"
+
+#: ../fontconfig-voodoo:43
+msgid "Remove the current fontconfig-voodoo config"
+msgstr "Praeguse fontconfig-voodoo seadistuse eemaldamine"
+
+#: ../fontconfig-voodoo:65
+msgid "Unconfigured"
+msgstr "Seadistamata"
+
+#: ../fontconfig-voodoo:77
+msgid "A configuration exists already. Use '--force' to overwrite it. "
+msgstr "Seaded on juba olemas. Ülekirjutamiseks kasuta '--force'. "
+
+#: ../fontconfig-voodoo:96
+msgid "No fontconfig-voodoo configuration found for the selected locale"
+msgstr "Valitud asukoha tarvis ei leitud fontconfig-voodoo seadeid"
+
+#: ../check-language-support:19
+msgid "target language code"
+msgstr "sihtkeele kood"
+
+#: ../check-language-support:23
+msgid "check for the given package(s) only -- separate packagenames by comma"
+msgstr "kontrollitakse ainult antud pakette -- pakettide nimed eralda komaga"
+
+#: ../check-language-support:25
+msgid "check all available languages"
+msgstr "kontrolli kõiki saadavalolevaid keeli"
+
+#: ../check-language-support:28
+msgid "show installed packages as well as missing ones"
+msgstr "näita nii paigaldatud kui ka puuduvaid pakette"
+
+#~ msgid "The list of available languages on the system has been updated."
+#~ msgstr "Süsteemile saada olevate keelte nimekiri on uuendatud."
+
+#~ msgid ""
+#~ "If you need to type in languages, which require more complex input methods "
+#~ "than just a simple key to letter mapping, you may want to enable this "
+#~ "function.\n"
+#~ "For example, you will need this function for typing Chinese, Japanese, "
+#~ "Korean or Vietnamese.\n"
+#~ "The recommended value for Ubuntu is \"ibus\".\n"
+#~ "If you want to use alternative input method systems, install the "
+#~ "corresponding packages first and then choose the desired system here."
+#~ msgstr ""
+#~ "Kui soovid sisestada teksti keeles, mille puhul pelgast klahvi-tähe "
+#~ "vastavuste muutmisest ei piisa, siis võiks olla kasu, kui lubad mõne "
+#~ "järgnevatest raamistikest.\n"
+#~ "Seda on vaja näiteks hiina, jaapani, korea või vietnami keeles "
+#~ "kirjutamiseks.\n"
+#~ "Soovituslik väärtus Ubuntu jaoks on \"ibus\".\n"
+#~ "Kui tahad kasutada alternatiivseid sisestusmalle, paigalda esmalt vastavad "
+#~ "paketid ja siis vali siit soovitud raamistik."
+
+#~ msgid ""
+#~ "This setting only affects the language your desktop and applications are "
+#~ "displayed in. It does not set the system environment, like currency or date "
+#~ "format settings. For that, use the settings in the Text tab.\n"
+#~ "The order of the values displayed here decides which translations to use for "
+#~ "your desktop. If translations for the first language are not available, the "
+#~ "next one in this list will be tried. The last entry of this list is always "
+#~ "\"English\".\n"
+#~ "Every entry below \"English\" will be ignored."
+#~ msgstr ""
+#~ "See säte puudutab ainult töölaua ja rakenduste kuvamise keelt. See ei määra "
+#~ "süsteemi keskkonnasätteid nagu rahaühik või kuupäeva vormistamine. Nende "
+#~ "jaoks muuda sätteid \"Teksti\" lipiku alt.\n"
+#~ "Siin kuvatavate väärtuste järjekorra järgi otsustatakse, millist tõlget "
+#~ "kasutada töölaua tarvis. Kui esimese keele jaoks tõlge puudub, kasutatakse "
+#~ "järgmist. Selle keelteloendi viimane kirje on alati \"inglise\".\n"
+#~ "Inglise keelele järgnevaid kirjeid eiratakse."
+
+#~ msgid ""
+#~ "This will set the system environment like shown below and will also affect "
+#~ "the preferred paper format and other territory specific settings.\n"
+#~ "If you want to display the desktop in a different language than this, please "
+#~ "select it in the \"Language\" tab.\n"
+#~ "Hence you should set this to a sensible value for the territory you are "
+#~ "located in."
+#~ msgstr ""
+#~ "See määrab süsteemikeskkonna viisil, mis näidatud allpool, ning muudab "
+#~ "vaikimisi paberiformaati ja teisi piirkonnast sõltuvaid sätteid.\n"
+#~ "Kui sa tahad kuvada töölauda mõnes muus keeles, siis tee oma valik \"Keele\" "
+#~ "lipiku alt.\n"
+#~ "Selle väärtuse peaksid sa määrama oma asukoha järgi."

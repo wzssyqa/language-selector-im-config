@@ -1,0 +1,600 @@
+# translation of lang-hu.po to
+# Hungarian translation for language-selector
+# Copyright (c) (c) 2005 Canonical Ltd, and Rosetta Contributors 2005
+# This file is distributed under the same license as the language-selector package.
+# Gabor Kelemen <kelemeng@gnome.hu>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lang-hu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-24 13:55+0000\n"
+"PO-Revision-Date: 2010-09-24 17:23+0000\n"
+"Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
+"Language-Team: <hu@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2010-10-05 09:20+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+"Language: \n"
+"X-Rosetta-Version: 0.1\n"
+
+#. Hack for Chinese langpack split
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:47
+msgid "Chinese (simplified)"
+msgstr "Kínai (egyszerűsített)"
+
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:49
+msgid "Chinese (traditional)"
+msgstr "Kínai (hagyományos)"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
+#: ../LanguageSelector/qt/QtLanguageSelector.py:98
+msgid "No language information available"
+msgstr "Nem érhetők el nyelvinformációk"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
+#: ../LanguageSelector/qt/QtLanguageSelector.py:99
+msgid ""
+"The system does not have information about the available languages yet. Do "
+"you want to perform a network update to get them now? "
+msgstr ""
+"A rendszernek még nincsenek információi az elérhető nyelvekről. Kíván "
+"hálózati frissítést végezni a nyelvek listájának lekéréséhez? "
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
+#: ../LanguageSelector/qt/QtLanguageSelector.py:93
+msgid "_Update"
+msgstr "_Frissítés"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:307
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:345
+#: ../data/LanguageSelector.ui.h:23
+msgid "Language"
+msgstr "Nyelv"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+msgid "Installed"
+msgstr "Telepítve"
+
+#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:383
+#, python-format
+msgid "%(INSTALL)d to install"
+msgid_plural "%(INSTALL)d to install"
+msgstr[0] "%(INSTALL)d telepítendő"
+msgstr[1] "%(INSTALL)d telepítendő"
+
+#. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:385
+#, python-format
+msgid "%(REMOVE)d to remove"
+msgid_plural "%(REMOVE)d to remove"
+msgstr[0] "%(REMOVE)d eltávolítandó"
+msgstr[1] "%(REMOVE)d eltávolítandó"
+
+#. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
+#, python-format
+msgid "%s, %s"
+msgstr "%s, %s"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:509
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:703
+#: ../LanguageSelector/qt/QtLanguageSelector.py:82
+#: ../LanguageSelector/qt/QtLanguageSelector.py:310
+#: ../check-language-support:52
+msgid "Software database is broken"
+msgstr "A szoftveradatbázis sérült"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:510
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:704
+#: ../check-language-support:53
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"Lehetetlen szoftvereket telepíteni vagy törölni. Használja a Synaptic "
+"csomagkezelőt, vagy futtassa a \"sudo apt-get install -f\" parancsot egy "
+"terminálban a probléma megoldása érdekében."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+msgid "Could not install the selected language support"
+msgstr "A kiválasztott nyelvi támogatás telepítése nem lehetséges"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:556
+msgid ""
+"This is perhaps a bug of this application. Please file a bug report at "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
+msgstr ""
+"Ez talán ennek az alkalmazásnak a hibája. Kérjük jelentse itt: "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+msgid "Could not install the full language support"
+msgstr "Nem lehet telepíteni a teljes nyelvi támogatást"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:581
+msgid ""
+"Usually this is related to an error in your software archive or software "
+"manager. Check your software preferences in the System > Administration menu."
+msgstr ""
+"Ennek általában egy szoftverarchívumban, vagy a szoftverkezelőben lévő "
+"hibához van köze. Ellenőrizze a szoftverbeállításokat a Rendszer → "
+"Adminisztráció menüben."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:660
+#: ../LanguageSelector/qt/QtLanguageSelector.py:164
+msgid "The language support is not installed completely"
+msgstr "A nyelvi támogatás nincs teljesen telepítve"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:661
+#: ../LanguageSelector/qt/QtLanguageSelector.py:165
+msgid ""
+"Some translations or writing aids available for your chosen languages are "
+"not installed yet. Do you want to install them now?"
+msgstr ""
+"A kiválasztott nyelvekhez elérhető egyes fordítások vagy írási segédletek "
+"még nincsenek telepítve. Kívánja ezeket most telepíteni?"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:664
+#: ../LanguageSelector/qt/QtLanguageSelector.py:94
+#: ../LanguageSelector/qt/QtLanguageSelector.py:160
+msgid "_Remind Me Later"
+msgstr "_Emlékeztessen később"
+
+#. FIXME: add "details"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:665
+#: ../LanguageSelector/qt/QtLanguageSelector.py:159
+msgid "_Install"
+msgstr "_Telepítés"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
+msgid "Details"
+msgstr "Részletek"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:57
+msgid "Uninstall"
+msgstr "Eltávolítás"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:58
+msgid "Select language to uninstall:"
+msgstr "Válassza ki az eltávolítandó nyelvet:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:65
+msgid "Language Selector"
+msgstr "Nyelvválasztó"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:83
+#: ../LanguageSelector/qt/QtLanguageSelector.py:311
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"Jelenleg nem lehetséges csomagok telepítése vagy törlése. Kérem használja az "
+"„Adept” csomagkezelőt, vagy futtassa terminálból a „sudo apt-get install -f” "
+"parancsot a hiba javításához."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+msgid "Default system language:"
+msgstr "A rendszer alapértelmezett nyelve:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+msgid "Set System Language"
+msgstr "A rendszer nyelvének beállítása"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+msgid "Keyboard input method:"
+msgstr "Billentyűzetbeviteli mód:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:122
+#: ../LanguageSelector/qt/QtLanguageSelector.py:125
+#: ../data/LanguageSelector.ui.h:13
+msgid "Cancel"
+msgstr "Mégse"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+msgid "Select language to install:"
+msgstr "Válassza ki a telepítendő nyelvet:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:124
+msgid "Install"
+msgstr "Telepítés"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:213
+msgid "Already installed"
+msgstr "Már telepítve"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:217
+msgid "Partially Installed"
+msgstr "Részben telepítve"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:221
+msgid "Not installed"
+msgstr "Nincs telepítve"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+#, python-format
+msgid "Default system Language now set to %s."
+msgstr "A rendszer alapértelmezett nyelve mostantól %s."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+msgid "Language Set"
+msgstr "Nyelvhalmaz"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+#, python-format
+msgid ""
+"Translations and support have now been installed for %s.  Select them from "
+"the Add Language button."
+msgstr ""
+"A fordítások és támogatás telepítve a(z) %s nyelvhez. Válassza ki a Nyelv "
+"hozzáadása gomb segítségével."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+msgid "Language Installed"
+msgstr "A nyelv telepítve"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+#, python-format
+msgid "Translations and support have now been uninstalled for %s."
+msgstr "%s nyelv fordításai és támogatása eltávolítva."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+msgid "Language Uninstalled"
+msgstr "A nyelv eltávolítva"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+msgid "Failed to set system language."
+msgstr "A rendszer nyelvének beállítása meghiúsult"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+msgid "Language Not Set"
+msgstr "A nyelv nem lett beállítva"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+msgid "Please run this software with administrative rights."
+msgstr "Rendszergazdai jogokkal futtassa ezt a szoftvert."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+msgid "Not Root User"
+msgstr "Rendszergazdai jogokkal nem rendelkező felhasználó"
+
+#: ../data/LanguageSelector.ui.h:1
+msgid "<b>Example</b>"
+msgstr "<b>Példa</b>"
+
+#: ../data/LanguageSelector.ui.h:2
+msgid ""
+"<big><b>Checking available language support</b></big>\n"
+"\n"
+"The availability of translations or writing aids can differ between "
+"languages."
+msgstr ""
+"<big><b>Elérhető nyelvi támogatás keresése</b></big>\n"
+"\n"
+"A fordítások vagy a szövegbevitel támogatásának elérhetősége az egyes "
+"nyelvek között eltérő lehet."
+
+#: ../data/LanguageSelector.ui.h:5
+msgid "<small>Changes take effect next time you log in.</small>"
+msgstr ""
+"<small>A módosítások a következő bejelentkezéskor lépnek érvénybe.</small>"
+
+#: ../data/LanguageSelector.ui.h:6
+msgid ""
+"<small>Drag languages to arrange them in order of preference.\n"
+"Changes take effect next time you log in.</small>"
+msgstr ""
+"<small>Húzza a nyelveket a kívánt használati sorrendbe.\n"
+"A módosítások a következő bejelentkezéskor lépnek életbe.</small>"
+
+#: ../data/LanguageSelector.ui.h:8
+msgid ""
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
+msgstr ""
+"<small>Ugyanazon nyelv használata indulásnál és a bejelentkezési "
+"képernyőn.</small>"
+
+#: ../data/LanguageSelector.ui.h:9
+msgid ""
+"<small>Uses the same text format choice for startup and the login "
+"screen.</small>"
+msgstr ""
+"<small>Ugyanazon szövegformátum használata az indulásnál és a bejelentkezési "
+"képernyőn.</small>"
+
+#: ../data/LanguageSelector.ui.h:10
+msgid ""
+"Additional fonts for this language which might be of general interest, e.g. "
+"decorative fonts for printing documents."
+msgstr ""
+"További betűtípusok e nyelvhez, melyek valószínűleg sokakat érdekelhetnek, "
+"például szépen kidolgozott betűkészletek dokumentumok nyomtatásához."
+
+#: ../data/LanguageSelector.ui.h:11
+msgid "Apply Changes"
+msgstr "Változtatások alkalmazása"
+
+#: ../data/LanguageSelector.ui.h:12
+msgid "Apply System-Wide..."
+msgstr "Alkalmazás rendszerszinten…"
+
+#: ../data/LanguageSelector.ui.h:14
+msgid "Components:"
+msgstr "Komponensek:"
+
+#: ../data/LanguageSelector.ui.h:15
+msgid "Currency:"
+msgstr "Pénznem:"
+
+#: ../data/LanguageSelector.ui.h:16
+msgid "Date:"
+msgstr "Dátum:"
+
+#: ../data/LanguageSelector.ui.h:17
+msgid "Display numbers, dates and currency amounts in the usual format for:"
+msgstr ""
+"Számok, dátumok és pénzegységek megjelenítése a következőhöz megszokott "
+"formátumban:"
+
+#: ../data/LanguageSelector.ui.h:18
+msgid "Extra fonts"
+msgstr "Extra betűkészletek"
+
+#: ../data/LanguageSelector.ui.h:19
+msgid "Input methods"
+msgstr "Szövegbeviteli módok"
+
+#: ../data/LanguageSelector.ui.h:20
+msgid "Install / Remove Languages..."
+msgstr "Nyelvek telepítése vagy eltávolítása…"
+
+#: ../data/LanguageSelector.ui.h:21
+msgid "Installed Languages"
+msgstr "Telepített nyelvek"
+
+#: ../data/LanguageSelector.ui.h:22
+msgid "Keyboard input method system:"
+msgstr "Billentyűzetbeviteli rendszer:"
+
+#: ../data/LanguageSelector.ui.h:24
+msgid "Language & Text"
+msgstr "Nyelv és szöveg"
+
+#: ../data/LanguageSelector.ui.h:25
+msgid "Language for menus and windows:"
+msgstr "Menük és ablakok nyelve:"
+
+#: ../data/LanguageSelector.ui.h:26
+msgid "Number:"
+msgstr "Szám:"
+
+#: ../data/LanguageSelector.ui.h:27
+msgid "Spellchecking and writing aids"
+msgstr "Helyesírás-ellenőrzés és írástámogatás"
+
+#: ../data/LanguageSelector.ui.h:28
+msgid "Text"
+msgstr "Szöveg"
+
+#: ../data/LanguageSelector.ui.h:29
+msgid "Translations"
+msgstr "Fordítások"
+
+#: ../data/LanguageSelector.ui.h:30
+msgid "Translations for your desktop."
+msgstr "Az asztali környezet fordításai"
+
+#: ../data/LanguageSelector.ui.h:31
+msgid ""
+"When a language is installed, individual users can choose it in their "
+"Language settings."
+msgstr ""
+"Ha egy nyelv telepítve van, a felhasználók kiválaszthatják azt a Nyelvi "
+"beállításokban."
+
+#: ../data/LanguageSelector.ui.h:32
+msgid ""
+"Word lists, dictionaries, thesauruses, etc. which can help typing by "
+"highlighting, correcting or suggesting words."
+msgstr ""
+"Szószedetek, szótárak, lexikonok, stb. melyek kiemeléssel segítenek a "
+"gépelésben, javításban vagy esetleg szavak javaslásában."
+
+#: ../data/language-selector.desktop.in.h:1
+#: ../data/qt-language-selector.desktop.in.h:1
+msgid "Configure multiple and native language support on your system"
+msgstr ""
+"Több különböző, illetve az anyanyelv támogatásának beállítása a rendszeren"
+
+#: ../data/language-selector.desktop.in.h:2
+#: ../data/qt-language-selector.desktop.in.h:2
+msgid "Language Support"
+msgstr "Nyelvi támogatás"
+
+#. Name
+#: ..//data/incomplete-language-support-gnome.note.in:5
+#: ..//data/incomplete-language-support-qt.note.in:5
+msgid "Incomplete Language Support"
+msgstr "Hiányos nyelvi támogatás"
+
+#. Description
+#: ..//data/incomplete-language-support-gnome.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
+msgstr ""
+"Úgy tűnik, hogy az Ön által kiválasztott nyelvhez nincs teljes nyelvi "
+"támogatást biztosító fájl. A hiányzó elemeket a „Futtatás most” gombra "
+"kattintva telepítheti, majd kövesse a megjelenő utasításokat. Ehhez aktív "
+"internetkapcsolat szükséges. Ha később szeretné elvégezni ezt a műveletet, "
+"akkor azt a „Rendszer -> Adminisztráció -> Nyelvi támogatás” kiválasztásával "
+"teheti meg."
+
+#. Description
+#: ..//data/incomplete-language-support-qt.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
+msgstr ""
+"Úgy tűnik, hogy az Ön által kiválasztott nyelvhez nincs teljes nyelvi "
+"támogatást biztosító fájl. A hiányzó elemeket a „Futtatás most” gombra "
+"kattintva telepítheti, majd kövesse a megjelenő utasításokat. Ehhez aktív "
+"internetkapcsolat szükséges. Ha később szeretné elvégezni ezt a műveletet, "
+"akkor ezt a „Rendszerbeállítások -> Területi és nyelvi beállítás” "
+"kiválasztásával teheti meg."
+
+#. Name
+#: ../data/restart_session_required.note.in:5
+msgid "Session Restart Required"
+msgstr "A rendszer újraindítása szükséges"
+
+#. Description
+#: ../data/restart_session_required.note.in:6
+msgid "The new language settings will take effect once you have logged out."
+msgstr "Az új nyelvi beállítás a kijelentkezés után lép érvénybe."
+
+#: ../gnome-language-selector:25
+msgid "don't verify installed language support"
+msgstr "A telepített nyelvi támogatás ne legyen ellenőrizve"
+
+#: ../gnome-language-selector:28 ../check-language-support:22
+msgid "alternative datadir"
+msgstr "Alternatív adatkönyvtár"
+
+#: ../fontconfig-voodoo:18
+msgid "Aborting"
+msgstr "Megszakítás"
+
+#: ../fontconfig-voodoo:26
+msgid "Force even when a configuration exists"
+msgstr "kényszerítés, még ha a konfiguráció létezik is"
+
+#: ../fontconfig-voodoo:28
+msgid "Set fontconfig voodoo for the selected language"
+msgstr "A fontconfig voodoo beállítása a kijelölt nyelvhez"
+
+#: ../fontconfig-voodoo:32
+msgid ""
+"Guess a configuration based on the LANGUAGE environment. Sets the config to "
+"'none' if nothing suitable was found"
+msgstr ""
+"Kitalálja a beállításokat a LANGUAGE környezetből, \"none\" értéket állít "
+"be, ha nem talál megfelelőt."
+
+#: ../fontconfig-voodoo:37
+msgid "List the available fontconfig-voodoo configs"
+msgstr "Felsorolja az elérhető fontconfig-voodoo konfigurációkat"
+
+#: ../fontconfig-voodoo:40
+msgid "Show the current fontconfig-voodoo config"
+msgstr "A jelenlegi fontconfig-voodoo konfiguráció megjelenítése"
+
+#: ../fontconfig-voodoo:43
+msgid "Remove the current fontconfig-voodoo config"
+msgstr "A jelenlegi fontconfig-voodoo konfiguráció eltávolítása"
+
+#: ../fontconfig-voodoo:65
+msgid "Unconfigured"
+msgstr "Nincs beállítva"
+
+#: ../fontconfig-voodoo:77
+msgid "A configuration exists already. Use '--force' to overwrite it. "
+msgstr ""
+"A konfiguráció már létezik. Használja a \"--force\" kapcsolót a "
+"felülíráshoz. "
+
+#: ../fontconfig-voodoo:96
+msgid "No fontconfig-voodoo configuration found for the selected locale"
+msgstr ""
+"Nem található fontconfig-voodoo konfiguráció a kijelölt területi beállításhoz"
+
+#: ../check-language-support:19
+msgid "target language code"
+msgstr "célnyelv kódja"
+
+#: ../check-language-support:23
+msgid "check for the given package(s) only -- separate packagenames by comma"
+msgstr ""
+"csak a megadott csomagokat ellenőrizze -- a csomagneveket vesszővel válassza "
+"el"
+
+#: ../check-language-support:25
+msgid "check all available languages"
+msgstr "minden elérhető nyelv ellenőrzése"
+
+#: ../check-language-support:28
+msgid "show installed packages as well as missing ones"
+msgstr "telepített csomagok megjelenítése, a hiányzókat is beleértve"
+
+#~ msgid "The list of available languages on the system has been updated."
+#~ msgstr "Az elérhető nyelvek listája frissült a rendszeren."
+
+#~ msgid ""
+#~ "If you need to type in languages, which require more complex input methods "
+#~ "than just a simple key to letter mapping, you may want to enable this "
+#~ "function.\n"
+#~ "For example, you will need this function for typing Chinese, Japanese, "
+#~ "Korean or Vietnamese.\n"
+#~ "The recommended value for Ubuntu is \"ibus\".\n"
+#~ "If you want to use alternative input method systems, install the "
+#~ "corresponding packages first and then choose the desired system here."
+#~ msgstr ""
+#~ "Ha olyan nyelven kíván írni, amely az egyszerű billentyű-betű társításnál "
+#~ "összetettebb beviteli eljárást igényel (például: kínai, japán, koreai, "
+#~ "vietnami), akkor engedélyezze ezt a szolgáltatást.\n"
+#~ "Ubuntuhoz az „ibus” értéket ajánljuk.\n"
+#~ "Ha más beviteli rendszert kíván használni, akkor először telepítse a "
+#~ "megfelelő csomagokat, majd válassza ki itt a rendszert."
+
+#~ msgid ""
+#~ "This will set the system environment like shown below and will also affect "
+#~ "the preferred paper format and other territory specific settings.\n"
+#~ "If you want to display the desktop in a different language than this, please "
+#~ "select it in the \"Language\" tab.\n"
+#~ "Hence you should set this to a sensible value for the territory you are "
+#~ "located in."
+#~ msgstr ""
+#~ "Ez a rendszer környezetét az alább látható módon módosítja, és hatással lesz "
+#~ "az előnyben részesített papírformátumra és más területspecifikus "
+#~ "beállításokra. Olyan érték kiválasztása ajánlott, amely megfelel a "
+#~ "tartózkodási helyén érvényes konvencióknak.\n"
+#~ "Ha más nyelven kívánja megjeleníteni az asztali környezetet, akkor azt a "
+#~ "„Nyelv” lapon válassza ki."
+
+#~ msgid ""
+#~ "This setting only affects the language your desktop and applications are "
+#~ "displayed in. It does not set the system environment, like currency or date "
+#~ "format settings. For that, use the settings in the Text tab.\n"
+#~ "The order of the values displayed here decides which translations to use for "
+#~ "your desktop. If translations for the first language are not available, the "
+#~ "next one in this list will be tried. The last entry of this list is always "
+#~ "\"English\".\n"
+#~ "Every entry below \"English\" will be ignored."
+#~ msgstr ""
+#~ "Ez csak az Ön asztali környezetének és alkalmazásainak nyelvi beállításait "
+#~ "befolyásolja. Nem változtatja meg a rendszerkörnyezetet, például a pénznem "
+#~ "vagy az időformátum beállításait. Ezek a „Szöveg” lapon található "
+#~ "beállításokkal módosíthatók.\n"
+#~ "Az itt megjelenített értékek sorrendje határozza meg, hogy mely fordításokat "
+#~ "használja az asztali környezetében. Ha nem található fordítás az első "
+#~ "nyelven, akkor a listában található másodikhoz tartozót próbálja meg "
+#~ "letölteni. A lista utolsó eleme mindig az „angol”.\n"
+#~ "Az „angol” elem alatti minden bejegyzés figyelmen kívül marad."

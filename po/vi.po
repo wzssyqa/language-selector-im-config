@@ -1,0 +1,586 @@
+# Vietnamese translation for language-selector
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the language-selector package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: language-selector\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-24 13:55+0000\n"
+"PO-Revision-Date: 2010-09-24 17:18+0000\n"
+"Last-Translator: Colin Watson <cjwatson@canonical.com>\n"
+"Language-Team: Vietnamese <vi@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Launchpad-Export-Date: 2010-10-05 09:20+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+"Language: vi\n"
+
+#. Hack for Chinese langpack split
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:47
+msgid "Chinese (simplified)"
+msgstr "Tiếng Trung Quốc (phổ thông)"
+
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:49
+msgid "Chinese (traditional)"
+msgstr "Trung Quốc (tuyền thống)"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
+#: ../LanguageSelector/qt/QtLanguageSelector.py:98
+msgid "No language information available"
+msgstr "Không có sẵn thông tin nào về ngôn ngữ"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
+#: ../LanguageSelector/qt/QtLanguageSelector.py:99
+msgid ""
+"The system does not have information about the available languages yet. Do "
+"you want to perform a network update to get them now? "
+msgstr ""
+"Hệ thống này hiện không có thông tin về các ngôn ngữ có sẵn nêu trên. Bạn có "
+"muốn kết nối với một mạng lưới cập nhật để có được chúng bây giờ không? "
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
+#: ../LanguageSelector/qt/QtLanguageSelector.py:93
+msgid "_Update"
+msgstr "_Cập nhật"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:307
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:345
+#: ../data/LanguageSelector.ui.h:23
+msgid "Language"
+msgstr "Ngôn ngữ"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+msgid "Installed"
+msgstr "Đã cài đặt"
+
+#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:383
+#, python-format
+msgid "%(INSTALL)d to install"
+msgid_plural "%(INSTALL)d to install"
+msgstr[0] "%(INSTALL)d để cài"
+
+#. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:385
+#, python-format
+msgid "%(REMOVE)d to remove"
+msgid_plural "%(REMOVE)d to remove"
+msgstr[0] "%(REMOVE)d để gỡ bỏ"
+
+#. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
+#, python-format
+msgid "%s, %s"
+msgstr "%s, %s"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:509
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:703
+#: ../LanguageSelector/qt/QtLanguageSelector.py:82
+#: ../LanguageSelector/qt/QtLanguageSelector.py:310
+#: ../check-language-support:52
+msgid "Software database is broken"
+msgstr "Cơ sở dữ liệu phần mềm bị hỏng"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:510
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:704
+#: ../check-language-support:53
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"Hiện không thể cài đặt hay gỡ bỏ bất kỳ phần mềm nào. Vui lòng dùng trình "
+"quản lý gói \"Synaptic\" hoặc chạy lệnh \"sudo apt-get install -f\" trong "
+"cửa sổ lệnh để sửa lỗi này trước tiên."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+msgid "Could not install the selected language support"
+msgstr "Không thể cài đặt các hỗ trợ của ngôn ngữ đã chọn"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:556
+msgid ""
+"This is perhaps a bug of this application. Please file a bug report at "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
+msgstr ""
+"Có lẽ đây là một lỗi của ứng dụng. Vui lòng báo cáo lỗi tại "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+msgid "Could not install the full language support"
+msgstr "Không thể cài đặt đầy đủ gói hỗ trợ ngôn ngữ"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:581
+msgid ""
+"Usually this is related to an error in your software archive or software "
+"manager. Check your software preferences in the System > Administration menu."
+msgstr ""
+"Đây thường là lỗi liên quan đến lưu trữ phần mềm hoặc quản lý phần mềm của "
+"bạn. Kiểm tra tùy chỉnh phần mềm của bạn ở trình đơn Hệ thống > Quản lý."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:660
+#: ../LanguageSelector/qt/QtLanguageSelector.py:164
+msgid "The language support is not installed completely"
+msgstr "Hỗ trợ ngôn ngữ không được cài đặt hoàn toàn"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:661
+#: ../LanguageSelector/qt/QtLanguageSelector.py:165
+msgid ""
+"Some translations or writing aids available for your chosen languages are "
+"not installed yet. Do you want to install them now?"
+msgstr ""
+"Một số đoạn dịch hoặc chương trình hỗ trợ soạn thảo cho các ngôn ngữ mà bạn "
+"chọn chưa được cài đặt. Bạn có muốn cài đặt chúng bây giờ không?"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:664
+#: ../LanguageSelector/qt/QtLanguageSelector.py:94
+#: ../LanguageSelector/qt/QtLanguageSelector.py:160
+msgid "_Remind Me Later"
+msgstr "_Nhắc nhở lần sau"
+
+#. FIXME: add "details"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:665
+#: ../LanguageSelector/qt/QtLanguageSelector.py:159
+msgid "_Install"
+msgstr "_Cài đặt"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
+msgid "Details"
+msgstr "Chi tiết"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:57
+msgid "Uninstall"
+msgstr "Gỡ cài đặt"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:58
+msgid "Select language to uninstall:"
+msgstr "Chọn ngôn ngữ để gỡ bỏ:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:65
+msgid "Language Selector"
+msgstr "Lựa chọn Ngôn ngữ"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:83
+#: ../LanguageSelector/qt/QtLanguageSelector.py:311
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"Hiện không thể cài đặt hay gỡ bỏ bất kỳ phần mềm nào. Vui lòng dùng trình "
+"quản lý gói \"Adept\" hoặc chạy lệnh \"sudo apt-get install -f\" trong cửa "
+"sổ lệnh để sửa lỗi này trước tiên."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+msgid "Default system language:"
+msgstr "Ngôn ngữ mặc định của hệ thống:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+msgid "Set System Language"
+msgstr "Thiết lập Ngôn ngữ Hệ thống"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+msgid "Keyboard input method:"
+msgstr "Phương thức nhập của bàn phím:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:122
+#: ../LanguageSelector/qt/QtLanguageSelector.py:125
+#: ../data/LanguageSelector.ui.h:13
+msgid "Cancel"
+msgstr "Huỷ bỏ"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+msgid "Select language to install:"
+msgstr "Chọn ngôn ngữ để cài đặt:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:124
+msgid "Install"
+msgstr "Cài đặt"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:213
+msgid "Already installed"
+msgstr "Vừa được cài đặt"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:217
+msgid "Partially Installed"
+msgstr "Đã cài đặt một phần"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:221
+msgid "Not installed"
+msgstr "Chưa được cài đặt"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+#, python-format
+msgid "Default system Language now set to %s."
+msgstr "Ngôn ngữ mặc định của hệ thống đã được đặt là %s"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+msgid "Language Set"
+msgstr "Thiết lập ngôn ngữ"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+#, python-format
+msgid ""
+"Translations and support have now been installed for %s.  Select them from "
+"the Add Language button."
+msgstr ""
+"Bản dịch và hỗ trợ bây giờ đã được cài đặt cho% s. Chọn chúng từ nút Thêm "
+"Ngôn ngữ."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+msgid "Language Installed"
+msgstr "Ngôn ngữ được cài đặt"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+#, python-format
+msgid "Translations and support have now been uninstalled for %s."
+msgstr "Bản dịch và hỗ trợ bây giờ đã được gỡ cài đặt cho% s."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+msgid "Language Uninstalled"
+msgstr "Ngôn ngữ được gỡ bỏ."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+msgid "Failed to set system language."
+msgstr "Không thể thiết lập ngôn ngữ hệ thống."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+msgid "Language Not Set"
+msgstr "Chưa thiết lập ngôn ngữ"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+msgid "Please run this software with administrative rights."
+msgstr "Hãy chạy chương trình này với quyền quản trị."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+msgid "Not Root User"
+msgstr "Không phải người dùng root"
+
+#: ../data/LanguageSelector.ui.h:1
+msgid "<b>Example</b>"
+msgstr "<b>Ví dụ</b>"
+
+#: ../data/LanguageSelector.ui.h:2
+msgid ""
+"<big><b>Checking available language support</b></big>\n"
+"\n"
+"The availability of translations or writing aids can differ between "
+"languages."
+msgstr ""
+"<big><b>Đang kiểm tra hỗ trợ ngôn ngữ hiện có</b></big>\n"
+"\n"
+"Tính khả thi của các bản dịch và công cụ hỗ trợ soạn thảo có thể sẽ khác "
+"nhau giữa các ngôn ngữ."
+
+#: ../data/LanguageSelector.ui.h:5
+msgid "<small>Changes take effect next time you log in.</small>"
+msgstr "<small>Thay đổi sẽ có hiệu lực vào lần đăng nhập kế tiếp</small>"
+
+#: ../data/LanguageSelector.ui.h:6
+msgid ""
+"<small>Drag languages to arrange them in order of preference.\n"
+"Changes take effect next time you log in.</small>"
+msgstr ""
+"<small>Kéo ngôn ngữ để đặt chúng theo thứ tự tùy chọn.\n"
+"Thay đổi sẽ có tác dụng vào lần đăng nhập tiếp theo.</small>"
+
+#: ../data/LanguageSelector.ui.h:8
+msgid ""
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
+msgstr ""
+"<small>Sử dụng cùng một ngôn ngữ cho khởi động và màn hình đăng nhập.</small>"
+
+#: ../data/LanguageSelector.ui.h:9
+msgid ""
+"<small>Uses the same text format choice for startup and the login "
+"screen.</small>"
+msgstr ""
+"<small>Sử dụng cùng lựa chọn định dạng chữ  cho màn hình khởi động và đăng "
+"nhập</small>"
+
+#: ../data/LanguageSelector.ui.h:10
+msgid ""
+"Additional fonts for this language which might be of general interest, e.g. "
+"decorative fonts for printing documents."
+msgstr ""
+"Phông phụ cho ngôn ngữ này có thể theo nhu cầu thông thường, vd. phông trang "
+"trí cho tài liệu in ấn."
+
+#: ../data/LanguageSelector.ui.h:11
+msgid "Apply Changes"
+msgstr "Áp dụng các Thay đổi"
+
+#: ../data/LanguageSelector.ui.h:12
+msgid "Apply System-Wide..."
+msgstr "Áp dụng trên hệ thống..."
+
+#: ../data/LanguageSelector.ui.h:14
+msgid "Components:"
+msgstr "Các thành phần:"
+
+#: ../data/LanguageSelector.ui.h:15
+msgid "Currency:"
+msgstr "Tiền tệ:"
+
+#: ../data/LanguageSelector.ui.h:16
+msgid "Date:"
+msgstr "Ngày tháng :"
+
+#: ../data/LanguageSelector.ui.h:17
+msgid "Display numbers, dates and currency amounts in the usual format for:"
+msgstr "Hiển thị số, ngày tháng và tiền tệ ở cách thông thường cho:"
+
+#: ../data/LanguageSelector.ui.h:18
+msgid "Extra fonts"
+msgstr "Phông chữ mở rộng"
+
+#: ../data/LanguageSelector.ui.h:19
+msgid "Input methods"
+msgstr "Các phương thức nhập liệu"
+
+#: ../data/LanguageSelector.ui.h:20
+msgid "Install / Remove Languages..."
+msgstr "Cài đặt / Gỡ bỏ Ngôn ngữ"
+
+#: ../data/LanguageSelector.ui.h:21
+msgid "Installed Languages"
+msgstr "Các ngôn ngữ đã cài đặt"
+
+#: ../data/LanguageSelector.ui.h:22
+msgid "Keyboard input method system:"
+msgstr "Hệ thống phương thức nhập vào của bàn phím:"
+
+#: ../data/LanguageSelector.ui.h:24
+msgid "Language & Text"
+msgstr "Ngôn ngữ và Văn bản"
+
+#: ../data/LanguageSelector.ui.h:25
+msgid "Language for menus and windows:"
+msgstr "Ngôn ngữ cho trình đơn và cửa sổ:"
+
+#: ../data/LanguageSelector.ui.h:26
+msgid "Number:"
+msgstr "Số :"
+
+#: ../data/LanguageSelector.ui.h:27
+msgid "Spellchecking and writing aids"
+msgstr "Kiểm tra chính tả và hỗ trợ soạn thảo"
+
+#: ../data/LanguageSelector.ui.h:28
+msgid "Text"
+msgstr "Văn bản"
+
+#: ../data/LanguageSelector.ui.h:29
+msgid "Translations"
+msgstr "Bản dịch"
+
+#: ../data/LanguageSelector.ui.h:30
+msgid "Translations for your desktop."
+msgstr "Bản dịch cho máy tính của bạn."
+
+#: ../data/LanguageSelector.ui.h:31
+msgid ""
+"When a language is installed, individual users can choose it in their "
+"Language settings."
+msgstr ""
+"Khi một ngôn ngữ được cài đặt, từng người dùng có thể chọn nó trong phần "
+"thiết lập Ngôn ngữ của họ."
+
+#: ../data/LanguageSelector.ui.h:32
+msgid ""
+"Word lists, dictionaries, thesauruses, etc. which can help typing by "
+"highlighting, correcting or suggesting words."
+msgstr ""
+"Danh sách từ, từ điển, từ điển lớn, v.v... có thể trợ giúp việc nhập liệu "
+"bằng cách tô sáng, sửa sai và gợi ý các từ."
+
+#: ../data/language-selector.desktop.in.h:1
+#: ../data/qt-language-selector.desktop.in.h:1
+msgid "Configure multiple and native language support on your system"
+msgstr "Cấu hình hỗ trợ đa ngôn ngữ và ngôn ngữ bản địa cho hệ thống của bạn"
+
+#: ../data/language-selector.desktop.in.h:2
+#: ../data/qt-language-selector.desktop.in.h:2
+msgid "Language Support"
+msgstr "Hỗ trợ ngôn ngữ"
+
+#. Name
+#: ..//data/incomplete-language-support-gnome.note.in:5
+#: ..//data/incomplete-language-support-qt.note.in:5
+msgid "Incomplete Language Support"
+msgstr "Hỗ trợ ngôn ngữ không đầy đủ"
+
+#. Description
+#: ..//data/incomplete-language-support-gnome.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
+msgstr ""
+"Các tệp tin hỗ trợ ngôn ngữ cho ngôn ngữ mà bạn chọn có lẽ không đầy đủ. Bạn "
+"có thể cài đặt các thành phần còn thiết bằng cách nhận \"Thực hiện hành động "
+"này\" và làm theo các chỉ dẫn. Bạn cần có kết nối Internet. Nếu bạn chưa "
+"muốn thực hiện bây giờ, sau này bạn có thể sử dụng \"Hệ thống -> Quản trị -> "
+"Hỗ trợ ngôn ngữ\"."
+
+#. Description
+#: ..//data/incomplete-language-support-qt.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
+msgstr ""
+"Các tệp tin hỗ trợ ngôn ngữ cho ngôn ngữ mà bạn chọn có lẽ không đầy đủ. Bạn "
+"có thể cài đặt các thành phần còn thiết bằng cách nhận \"Thực hiện hành động "
+"này\" và làm theo các chỉ dẫn. Bạn cần có kết nối Internet. Nếu bạn chưa "
+"muốn thực hiện bây giờ, sau này bạn có thể sử dụng \"Hệ thống -> Thiết lập -"
+"> Vùng miền và Ngôn ngữ\"."
+
+#. Name
+#: ../data/restart_session_required.note.in:5
+msgid "Session Restart Required"
+msgstr "Hãy khởi động lại phiên làm việc"
+
+#. Description
+#: ../data/restart_session_required.note.in:6
+msgid "The new language settings will take effect once you have logged out."
+msgstr "Các thiết lập ngôn ngữ mới sẽ có hiệu lực khi bạn đăng xuất."
+
+#: ../gnome-language-selector:25
+msgid "don't verify installed language support"
+msgstr "không kiểm tra hỗ trợ ngôn ngữ đã cài đặt"
+
+#: ../gnome-language-selector:28 ../check-language-support:22
+msgid "alternative datadir"
+msgstr "thư mục dữ liệu thay thế"
+
+#: ../fontconfig-voodoo:18
+msgid "Aborting"
+msgstr "Đang dừng"
+
+#: ../fontconfig-voodoo:26
+msgid "Force even when a configuration exists"
+msgstr "Bắt buộc ngay cả khi đã có cấu hình"
+
+#: ../fontconfig-voodoo:28
+msgid "Set fontconfig voodoo for the selected language"
+msgstr "Thiết lập biến hóa fontconfig cho ngôn ngữ đã chọn"
+
+#: ../fontconfig-voodoo:32
+msgid ""
+"Guess a configuration based on the LANGUAGE environment. Sets the config to "
+"'none' if nothing suitable was found"
+msgstr ""
+"Đoán một cấu hình dựa trên môi trường LANGUAGE. Thiết lập cấu hình thành "
+"'không' nếu không tìm thấy cái nào phù hợp"
+
+#: ../fontconfig-voodoo:37
+msgid "List the available fontconfig-voodoo configs"
+msgstr "Liệt kê các cấu hình biến hóa fontconfig"
+
+#: ../fontconfig-voodoo:40
+msgid "Show the current fontconfig-voodoo config"
+msgstr "Hiện cấu hình biến hóa fontcofig hiện tại"
+
+#: ../fontconfig-voodoo:43
+msgid "Remove the current fontconfig-voodoo config"
+msgstr "Xóa cấu hình biến hóa fontcofig hiện tại"
+
+#: ../fontconfig-voodoo:65
+msgid "Unconfigured"
+msgstr "Chưa cấu hình"
+
+#: ../fontconfig-voodoo:77
+msgid "A configuration exists already. Use '--force' to overwrite it. "
+msgstr "Một cấu hình đã tồn tại. Sử dụng '--force' để ghi đè lên. "
+
+#: ../fontconfig-voodoo:96
+msgid "No fontconfig-voodoo configuration found for the selected locale"
+msgstr ""
+"Không có cấu hình biến hóa fontconfig nào được tìm thấy cho bản địa đã chọn"
+
+#: ../check-language-support:19
+msgid "target language code"
+msgstr "mục tiêu ngôn ngữ mã"
+
+#: ../check-language-support:23
+msgid "check for the given package(s) only -- separate packagenames by comma"
+msgstr ""
+"Chỉ kiểm tra những gói được đưa ra -- phân tách các tên gói bằng dấu phẩy"
+
+#: ../check-language-support:25
+msgid "check all available languages"
+msgstr "đánh dấu tất cả ngôn ngữ có sẵn"
+
+#: ../check-language-support:28
+msgid "show installed packages as well as missing ones"
+msgstr "cho xem những gói đã cài đặt cùng với những gói bị mất"
+
+#~ msgid "The list of available languages on the system has been updated."
+#~ msgstr "Danh sách các ngôn ngữ có sẵn trên hệ thống đã được cập nhật."
+
+#~ msgid ""
+#~ "This will set the system environment like shown below and will also affect "
+#~ "the preferred paper format and other territory specific settings.\n"
+#~ "If you want to display the desktop in a different language than this, please "
+#~ "select it in the \"Language\" tab.\n"
+#~ "Hence you should set this to a sensible value for the territory you are "
+#~ "located in."
+#~ msgstr ""
+#~ "Nó sẽ thiết lập môi trường hệ thống giống như mô tả bên dưới, và nó cũng ảnh "
+#~ "hưởng đến định dạng giấy và các thiết lập đặc trưng khu vực.\n"
+#~ "Nếu bạn muốn máy tính hiển thị một ngôn ngữ khác, hãy sử dụng thẻ \"Ngôn "
+#~ "ngữ\".\n"
+#~ "Tại đây bạn có thể thiết lập giá trị hợp lý cho khu vực mà bạn đang sống."
+
+#~ msgid ""
+#~ "This setting only affects the language your desktop and applications are "
+#~ "displayed in. It does not set the system environment, like currency or date "
+#~ "format settings. For that, use the settings in the Text tab.\n"
+#~ "The order of the values displayed here decides which translations to use for "
+#~ "your desktop. If translations for the first language are not available, the "
+#~ "next one in this list will be tried. The last entry of this list is always "
+#~ "\"English\".\n"
+#~ "Every entry below \"English\" will be ignored."
+#~ msgstr ""
+#~ "Thiết lập này chỉ có tác dụng ngôn ngữ trên bàn làm việc và các ứng dụng "
+#~ "hiển thị. Nó không có tác dụng trên toàn hệ thống môi trường, ví dụ như "
+#~ "thiết lập hệ tiền tệ hay định dạng thời gian. \n"
+#~ "This setting only affects the language your desktop and applications are "
+#~ "displayed in. It does not set the system environment, like currency or date "
+#~ "format settings. Để làm việc đó, sử dụng thiết lập ở thẻ Văn bản.\n"
+#~ "Thứ tự giá trị hiển thị ở đây quyết định ngôn ngữ nào sẽ được sử dụng cho "
+#~ "máy của bạn. Nếu bản dịch ngôn ngữ đầu tiên không có sẵn, cái tiếp theo "
+#~ "trong danh sách sẽ được thử. Giá trị cuối cùng của danh sách này luôn là "
+#~ "\"English\".\n"
+#~ "Tất cả mọi mục bên dưới \"English\" sẽ bị lờ đi."
+
+#~ msgid ""
+#~ "If you need to type in languages, which require more complex input methods "
+#~ "than just a simple key to letter mapping, you may want to enable this "
+#~ "function.\n"
+#~ "For example, you will need this function for typing Chinese, Japanese, "
+#~ "Korean or Vietnamese.\n"
+#~ "The recommended value for Ubuntu is \"ibus\".\n"
+#~ "If you want to use alternative input method systems, install the "
+#~ "corresponding packages first and then choose the desired system here."
+#~ msgstr ""
+#~ "Nếu bạn cần gõ ngôn ngữ cần những bộ gõ phức tạp hơn là chỉ bản đồ kí tự, "
+#~ "bạn nên bật tính năng này\n"
+#~ "Ví dụ bạn cần chức năng gõ tiếng Trung Quốc, Nhật, Hàn Quốc hay tiếng Việt.\n"
+#~ "Giá trị khuyên dùng của Ubuntu là \"ibus\".\n"
+#~ "Nếu bạn muốn sử dụng hệ thống phương pháp nhập khác, hãy cài đặt gói tương "
+#~ "ứng trước và sau đó chọn hệ thống đó tại đây."

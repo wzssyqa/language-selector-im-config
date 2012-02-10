@@ -1,0 +1,25 @@
+#!/usr/bin/python
+
+import gettext
+
+from LanguageSelector.gtk.GtkLanguageSelector import GtkLanguageSelector
+from gettext import gettext as _
+from optparse import OptionParser
+
+if __name__ == "__main__":
+        gettext.bindtextdomain("language-selector", "/usr/share/locale")
+        gettext.textdomain("language-selector")
+
+	parser = OptionParser()
+	parser.add_option("-n", "--no-verify-installed-lang-support",
+			  action="store_false", dest="verify_installed",
+			  default=True,
+			  help=_("don't verify installed language support"))
+	parser.add_option("-d", "--datadir",
+			  default="/usr/share/language-selector/",
+			  help=_("alternative datadir"))
+	(options, args) = parser.parse_args()
+
+	app = GtkLanguageSelector(datadir=options.datadir,
+				  options=options)
+	app.run()

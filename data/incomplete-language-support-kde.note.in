@@ -1,0 +1,11 @@
+Priority: High
+Terminal: False
+Command: kcmshell4 language-selector
+GettextDomain: language-selector
+_Name: Incomplete Language Support
+_Description:
+ The language support files for your selected language seem to be incomplete.
+ You can install the missing components by clicking on "Run this action now"
+ and follow the instructions. An active internet connection is required.
+ If you would like to do this at a later time, please use "System Settings ->
+ Regional & Language" instead.

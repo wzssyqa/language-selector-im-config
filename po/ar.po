@@ -1,0 +1,574 @@
+# Arabic translation for language-selector
+# Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
+# This file is distributed under the same license as the language-selector package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: language-selector\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-24 13:55+0000\n"
+"PO-Revision-Date: 2010-09-24 17:23+0000\n"
+"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
+"Language-Team: Arabic <ar@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
+"3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
+"X-Launchpad-Export-Date: 2010-10-05 09:20+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+"Language: ar\n"
+
+#. Hack for Chinese langpack split
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:47
+msgid "Chinese (simplified)"
+msgstr "الصينية (المبسطة)"
+
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:49
+msgid "Chinese (traditional)"
+msgstr "الصينية (التقليدية)"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
+#: ../LanguageSelector/qt/QtLanguageSelector.py:98
+msgid "No language information available"
+msgstr "لا تتوفر أي معلومات عن اللغات"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
+#: ../LanguageSelector/qt/QtLanguageSelector.py:99
+msgid ""
+"The system does not have information about the available languages yet. Do "
+"you want to perform a network update to get them now? "
+msgstr ""
+"لا يملك النظام معلومات عن اللغات المتاحة. أتريد تحديثها عبر الشبكة الآن؟ "
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
+#: ../LanguageSelector/qt/QtLanguageSelector.py:93
+msgid "_Update"
+msgstr "_حدِّث"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:307
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:345
+#: ../data/LanguageSelector.ui.h:23
+msgid "Language"
+msgstr "اللغة"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+msgid "Installed"
+msgstr "مثبتة"
+
+#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:383
+#, python-format
+msgid "%(INSTALL)d to install"
+msgid_plural "%(INSTALL)d to install"
+msgstr[0] "لا شيء لتثبيته"
+msgstr[1] "واحد للتثبيت"
+msgstr[2] "اثنين للتثبيت"
+msgstr[3] "%(INSTALL)d للتثبيت"
+msgstr[4] "%(INSTALL)d للتثبيت"
+msgstr[5] "%(INSTALL)d للتثبيت"
+
+#. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:385
+#, python-format
+msgid "%(REMOVE)d to remove"
+msgid_plural "%(REMOVE)d to remove"
+msgstr[0] "لا شيء لإزالته"
+msgstr[1] "واحد للإزالة"
+msgstr[2] "اثنين للإزالة"
+msgstr[3] "%(REMOVE)d للإزالة"
+msgstr[4] "%(REMOVE)d للإزالة"
+msgstr[5] "%(REMOVE)d للإزالة"
+
+#. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
+#, python-format
+msgid "%s, %s"
+msgstr "‏%s،‏ %s"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:509
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:703
+#: ../LanguageSelector/qt/QtLanguageSelector.py:82
+#: ../LanguageSelector/qt/QtLanguageSelector.py:310
+#: ../check-language-support:52
+msgid "Software database is broken"
+msgstr "قاعدة بيانات البرمجيات معطوبة"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:510
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:704
+#: ../check-language-support:53
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"لا يمكن تثبيت أو إزالة أي برمجيات. استخدم مدير الحزم \"سينابتك\" أو شغل "
+"\"sudo apt-get install -f\" في مرقاب لمحاولة إصلاح هذه المشكلة أولا."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+msgid "Could not install the selected language support"
+msgstr "تعذر تثبيت دعم اللغة المطلوبة"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:556
+msgid ""
+"This is perhaps a bug of this application. Please file a bug report at "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
+msgstr ""
+"قد تكون هذه علة في التطبيق. من فضلك أبلغ عنها في "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+msgid "Could not install the full language support"
+msgstr "تعذر تثبيت دعم اللغة الكامل"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:581
+msgid ""
+"Usually this is related to an error in your software archive or software "
+"manager. Check your software preferences in the System > Administration menu."
+msgstr ""
+"عادة ما يكون هذا بسبب خطأ في أرشيف أو مدير البرمجيات. راجع تفضيلات البرمجيات "
+"في قائمة نظام > إدارة."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:660
+#: ../LanguageSelector/qt/QtLanguageSelector.py:164
+msgid "The language support is not installed completely"
+msgstr "لم يُثبت دعم اللغة كاملا"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:661
+#: ../LanguageSelector/qt/QtLanguageSelector.py:165
+msgid ""
+"Some translations or writing aids available for your chosen languages are "
+"not installed yet. Do you want to install them now?"
+msgstr ""
+"بعض الترجمات أو إعانة الكتابة المتوفرة للغة التي اخترتها لم تُثبّت بعد. "
+"أتريد تثبيتها الآن؟"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:664
+#: ../LanguageSelector/qt/QtLanguageSelector.py:94
+#: ../LanguageSelector/qt/QtLanguageSelector.py:160
+msgid "_Remind Me Later"
+msgstr "_ذكرني لاحقًا"
+
+#. FIXME: add "details"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:665
+#: ../LanguageSelector/qt/QtLanguageSelector.py:159
+msgid "_Install"
+msgstr "_ثبِّت"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
+msgid "Details"
+msgstr "التفاصيل"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:57
+msgid "Uninstall"
+msgstr "أزِل"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:58
+msgid "Select language to uninstall:"
+msgstr "اختر لغة لإزالتها:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:65
+msgid "Language Selector"
+msgstr "اختيار اللغات"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:83
+#: ../LanguageSelector/qt/QtLanguageSelector.py:311
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"تعذّر تثبيت أو إزالة أي برمجيات. من فضلك استخدم مدير الحزم \"أدِبت\" أو شغل "
+"\"sudo apt-get install -f\" في طرفية لحل هذه المشكلة أولا."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+msgid "Default system language:"
+msgstr "لغة النظام المبدئية:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+msgid "Set System Language"
+msgstr "اضبط لغة النظام"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+msgid "Keyboard input method:"
+msgstr "طريقة إدخال لوحة المفاتيح:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:122
+#: ../LanguageSelector/qt/QtLanguageSelector.py:125
+#: ../data/LanguageSelector.ui.h:13
+msgid "Cancel"
+msgstr "ألغِ"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+msgid "Select language to install:"
+msgstr "اختر لغة لتثبيتها:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:124
+msgid "Install"
+msgstr "ثبِّت"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:213
+msgid "Already installed"
+msgstr "مثبّتة بالفعل"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:217
+msgid "Partially Installed"
+msgstr "مثبّتة جزئيا"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:221
+msgid "Not installed"
+msgstr "غير مثبّتة"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+#, python-format
+msgid "Default system Language now set to %s."
+msgstr "ضُبطت لغة النظام المبدئية إلى %s."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+msgid "Language Set"
+msgstr "ضُبطت اللغة"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+#, python-format
+msgid ""
+"Translations and support have now been installed for %s.  Select them from "
+"the Add Language button."
+msgstr "ثُبِّتت الترجمة والدعم لـ %s. اخترهم من زر أضف لغة."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+msgid "Language Installed"
+msgstr "ثُبِّتت اللغة"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+#, python-format
+msgid "Translations and support have now been uninstalled for %s."
+msgstr "حُذِفت ترجمة ودعم %s."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+msgid "Language Uninstalled"
+msgstr "حُذِفت اللغة"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+msgid "Failed to set system language."
+msgstr "فشل ضبط لغة النظام."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+msgid "Language Not Set"
+msgstr "لم تضبط اللغة"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+msgid "Please run this software with administrative rights."
+msgstr "من فضلك شغّل هذا البرنامج بصلاحيات المدير."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+msgid "Not Root User"
+msgstr "لست الجذز"
+
+#: ../data/LanguageSelector.ui.h:1
+msgid "<b>Example</b>"
+msgstr "<b>مثال</b>"
+
+#: ../data/LanguageSelector.ui.h:2
+msgid ""
+"<big><b>Checking available language support</b></big>\n"
+"\n"
+"The availability of translations or writing aids can differ between "
+"languages."
+msgstr ""
+"<big><b>يتحقق من دعم اللغات المتوفر</b></big>\n"
+"توفَّر الترجمات وإعانة الكتابة قد يختلف من لغة لأخرى."
+
+#: ../data/LanguageSelector.ui.h:5
+msgid "<small>Changes take effect next time you log in.</small>"
+msgstr "<small>تصبح التغييرات نافذة مع ولوجك القادم.</small>"
+
+#: ../data/LanguageSelector.ui.h:6
+msgid ""
+"<small>Drag languages to arrange them in order of preference.\n"
+"Changes take effect next time you log in.</small>"
+msgstr ""
+"<small>اسحب اللغات لترتيبها طبقا لتفضيلها.\n"
+"يظهر تأثير التغييرات عند الولوج التالي.</small>"
+
+#: ../data/LanguageSelector.ui.h:8
+msgid ""
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
+msgstr "<small>يستخدم نفس اختيارات اللغات للبدء وشاشة الولوج.</small>"
+
+#: ../data/LanguageSelector.ui.h:9
+msgid ""
+"<small>Uses the same text format choice for startup and the login "
+"screen.</small>"
+msgstr "<small>تستخدم نفس اختيا نسق النص لبدء التشغيل وشاشة الولوج.</small>"
+
+#: ../data/LanguageSelector.ui.h:10
+msgid ""
+"Additional fonts for this language which might be of general interest, e.g. "
+"decorative fonts for printing documents."
+msgstr ""
+"خطوط إضافية لهذه اللغة قد تكون مفيدة، مثلا خطوط زخرفية لطباعة الوثائق."
+
+#: ../data/LanguageSelector.ui.h:11
+msgid "Apply Changes"
+msgstr "طبّق التغييرات"
+
+#: ../data/LanguageSelector.ui.h:12
+msgid "Apply System-Wide..."
+msgstr "طبّق على كل النظام..."
+
+#: ../data/LanguageSelector.ui.h:14
+msgid "Components:"
+msgstr "المكونات:"
+
+#: ../data/LanguageSelector.ui.h:15
+msgid "Currency:"
+msgstr "العملة:"
+
+#: ../data/LanguageSelector.ui.h:16
+msgid "Date:"
+msgstr "التاريخ:"
+
+#: ../data/LanguageSelector.ui.h:17
+msgid "Display numbers, dates and currency amounts in the usual format for:"
+msgstr "اعرض الأرقام والتاريخ والعملة بتنسيق:"
+
+#: ../data/LanguageSelector.ui.h:18
+msgid "Extra fonts"
+msgstr "خطوط إضافية"
+
+#: ../data/LanguageSelector.ui.h:19
+msgid "Input methods"
+msgstr "طرق الإدخال"
+
+#: ../data/LanguageSelector.ui.h:20
+msgid "Install / Remove Languages..."
+msgstr "ثبّت / احذف اللغات..."
+
+#: ../data/LanguageSelector.ui.h:21
+msgid "Installed Languages"
+msgstr "اللغات المُثبّتة"
+
+#: ../data/LanguageSelector.ui.h:22
+msgid "Keyboard input method system:"
+msgstr "نظام إدخال لوحة المفاتيح:"
+
+#: ../data/LanguageSelector.ui.h:24
+msgid "Language & Text"
+msgstr "اللغة والنص"
+
+#: ../data/LanguageSelector.ui.h:25
+msgid "Language for menus and windows:"
+msgstr "لغة القوائم والنوافذ"
+
+#: ../data/LanguageSelector.ui.h:26
+msgid "Number:"
+msgstr "رقم:"
+
+#: ../data/LanguageSelector.ui.h:27
+msgid "Spellchecking and writing aids"
+msgstr "التدقيق الإملائي وإعانة الكتابة"
+
+#: ../data/LanguageSelector.ui.h:28
+msgid "Text"
+msgstr "نص"
+
+#: ../data/LanguageSelector.ui.h:29
+msgid "Translations"
+msgstr "ترجمات"
+
+#: ../data/LanguageSelector.ui.h:30
+msgid "Translations for your desktop."
+msgstr "ترجمات لسطح المكتب."
+
+#: ../data/LanguageSelector.ui.h:31
+msgid ""
+"When a language is installed, individual users can choose it in their "
+"Language settings."
+msgstr "عندما تثبَّت لغة، يستطيع أي مستخدم اختيارها في إعداداته."
+
+#: ../data/LanguageSelector.ui.h:32
+msgid ""
+"Word lists, dictionaries, thesauruses, etc. which can help typing by "
+"highlighting, correcting or suggesting words."
+msgstr ""
+"قوائم الكلمات والقواميس والمكانز إلخ. والتي تعين على الكتابة بإبراز وتصحيح "
+"واقتراح الكلمات."
+
+#: ../data/language-selector.desktop.in.h:1
+#: ../data/qt-language-selector.desktop.in.h:1
+msgid "Configure multiple and native language support on your system"
+msgstr "اضبط دعم اللغات المتعددة على نظامك"
+
+#: ../data/language-selector.desktop.in.h:2
+#: ../data/qt-language-selector.desktop.in.h:2
+msgid "Language Support"
+msgstr "دعم اللغات"
+
+#. Name
+#: ..//data/incomplete-language-support-gnome.note.in:5
+#: ..//data/incomplete-language-support-qt.note.in:5
+msgid "Incomplete Language Support"
+msgstr "دعم لغة غير مكتمل"
+
+#. Description
+#: ..//data/incomplete-language-support-gnome.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
+msgstr ""
+"يبدو أن ملفات دعم اللغة التي اخترتها غير مكتملة. يمكنك تثبيت المكونات "
+"الناقصة بالنقر على \"قم بهذا الإجراء الآن\" ثم اتباع التعليمات. تحتاج لاتصال "
+"بالإنترنت. إذا أردت القيام بهذا لاحقا، فاستخدم \"نظام -> إدارة -> دعم "
+"اللغات\"."
+
+#. Description
+#: ..//data/incomplete-language-support-qt.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
+msgstr ""
+"يبدو أن ملفات دعم اللغة التي اخترتها غير مكتملة. يمكنك تثبيت المكونات "
+"الناقصة بالنقر على \"قم بهذا الإجراء الآن\" ثم اتباع التعليمات. تحتاج لاتصال "
+"بالإنترنت. إذا أردت القيام بهذا لاحقا، فاستخدم \"إعدادات النظام -> المحلية "
+"واللغة\"."
+
+#. Name
+#: ../data/restart_session_required.note.in:5
+msgid "Session Restart Required"
+msgstr "تحتاج لإعادة تشغيل الجلسة"
+
+#. Description
+#: ../data/restart_session_required.note.in:6
+msgid "The new language settings will take effect once you have logged out."
+msgstr "ستصبح إعدادات اللغة الجديدة نافذة بمجرد خروجك من الجلسة."
+
+#: ../gnome-language-selector:25
+msgid "don't verify installed language support"
+msgstr "لا تُراجع دعم اللغات المُثبّت"
+
+#: ../gnome-language-selector:28 ../check-language-support:22
+msgid "alternative datadir"
+msgstr "مجلد بيانات بديل"
+
+#: ../fontconfig-voodoo:18
+msgid "Aborting"
+msgstr "يُجهض"
+
+#: ../fontconfig-voodoo:26
+msgid "Force even when a configuration exists"
+msgstr "افرض حتى لو كان الإعداد موجودا بالفعل"
+
+#: ../fontconfig-voodoo:28
+msgid "Set fontconfig voodoo for the selected language"
+msgstr "اضبط fontconfig voodoo للغة المنتقاة"
+
+#: ../fontconfig-voodoo:32
+msgid ""
+"Guess a configuration based on the LANGUAGE environment. Sets the config to "
+"'none' if nothing suitable was found"
+msgstr ""
+"خمِّن الإعداد معتمدا على بيئة LANGUAGE. تضبط الإعداد إلى 'none' إذا لم يُعثر "
+"على شيء مناسب"
+
+#: ../fontconfig-voodoo:37
+msgid "List the available fontconfig-voodoo configs"
+msgstr "اسرد إعدادات fontconfig-voodoo المتوفرة"
+
+#: ../fontconfig-voodoo:40
+msgid "Show the current fontconfig-voodoo config"
+msgstr "اعرض إعداد fontconfig-voodoo الحالي"
+
+#: ../fontconfig-voodoo:43
+msgid "Remove the current fontconfig-voodoo config"
+msgstr "أزل إعداد fontconfig-voodoo الحالي"
+
+#: ../fontconfig-voodoo:65
+msgid "Unconfigured"
+msgstr "غير مُعدّ"
+
+#: ../fontconfig-voodoo:77
+msgid "A configuration exists already. Use '--force' to overwrite it. "
+msgstr "يوجد إعداد بالفعل. استخدم '--force' لتستبدله. "
+
+#: ../fontconfig-voodoo:96
+msgid "No fontconfig-voodoo configuration found for the selected locale"
+msgstr "لم يُعثر على إعداد fontconfig-voodoo للمحلّية المنتقاة"
+
+#: ../check-language-support:19
+msgid "target language code"
+msgstr "رمز اللغة المطلوبة"
+
+#: ../check-language-support:23
+msgid "check for the given package(s) only -- separate packagenames by comma"
+msgstr "التمس للحزم المحددة فقط -- افصل أسماء الحزم بفاصلة (,)"
+
+#: ../check-language-support:25
+msgid "check all available languages"
+msgstr "تحقق من كل اللغات المتاحة"
+
+#: ../check-language-support:28
+msgid "show installed packages as well as missing ones"
+msgstr "أظهر الحزم المثبتة وأيضا الناقصة"
+
+#~ msgid "The list of available languages on the system has been updated."
+#~ msgstr "حُدِّثت قائمة اللغات المتوفرة على النظام."
+
+#~ msgid ""
+#~ "This will set the system environment like shown below and will also affect "
+#~ "the preferred paper format and other territory specific settings.\n"
+#~ "If you want to display the desktop in a different language than this, please "
+#~ "select it in the \"Language\" tab.\n"
+#~ "Hence you should set this to a sensible value for the territory you are "
+#~ "located in."
+#~ msgstr ""
+#~ "سيحدد هذا إعدادات بيئة النظام كما موضح أدناه، كما سيحدد أيضا نسق الصفحات "
+#~ "المفضل والإعدادات المحلية الأخرى.\n"
+#~ "إذا أردت عرض التطبيقات بلغة أخرى غير هذه فاخترها من لسان \"اللغة\"."
+
+#~ msgid ""
+#~ "This setting only affects the language your desktop and applications are "
+#~ "displayed in. It does not set the system environment, like currency or date "
+#~ "format settings. For that, use the settings in the Text tab.\n"
+#~ "The order of the values displayed here decides which translations to use for "
+#~ "your desktop. If translations for the first language are not available, the "
+#~ "next one in this list will be tried. The last entry of this list is always "
+#~ "\"English\".\n"
+#~ "Every entry below \"English\" will be ignored."
+#~ msgstr ""
+#~ "يحدد هذا الخيار اللغة التي ستستخدمها تطبيقاتك، لكن لا يحدد خيارات بيئة "
+#~ "النظام مثل العمل ونسق التاريخ، والتي تضبط في اللسان التالي.\n"
+#~ "ترتيب القيم المدخلة هنا يحدد أي الترجمات ستستخدم. إذا لم تتوفر ترجمة باللغة "
+#~ "الأولى فستؤخذ من التالية لها في القائمة، وهكذا. آخر قيمة هي \"English\" "
+#~ "دائما.\n"
+#~ "أي قيمة بعد \"English\" لن يؤخذ بها."
+
+#~ msgid ""
+#~ "If you need to type in languages, which require more complex input methods "
+#~ "than just a simple key to letter mapping, you may want to enable this "
+#~ "function.\n"
+#~ "For example, you will need this function for typing Chinese, Japanese, "
+#~ "Korean or Vietnamese.\n"
+#~ "The recommended value for Ubuntu is \"ibus\".\n"
+#~ "If you want to use alternative input method systems, install the "
+#~ "corresponding packages first and then choose the desired system here."
+#~ msgstr ""
+#~ "إذا كنت تحتاج لكتابة لغات تتطلب أنظمة إدخال أكثر تعقيدا، فقد ترغب في تفعيل "
+#~ "هذ الخاصية.\n"
+#~ "فمثلا ستحتاج هذه الخاصية لكتابة الصينية أو اليابانية أو الكورية أو "
+#~ "القيتنامية.\n"
+#~ "القيمة المفضلة في أوبونتو هي \"ibus\".\n"
+#~ "إذا كنت تريد استخدام نظم إدخال أخرى فثبت الحزم المعنية أولا ثم اختر النظام "
+#~ "المراد هنا."

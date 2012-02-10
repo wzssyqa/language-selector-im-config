@@ -1,0 +1,9 @@
+#!/usr/bin/python
+
+import gettext
+from LanguageSelector.qt.QtLanguageSelector import QtLanguageSelector
+
+def CreatePlugin(widget_parent, parent, component_data):
+    gettext.bindtextdomain("language-selector", "/usr/share/locale")
+    gettext.textdomain("language-selector")
+    return QtLanguageSelector("/usr/share/language-selector/", component_data, widget_parent)

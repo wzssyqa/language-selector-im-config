@@ -1,0 +1,101 @@
+#!/usr/bin/python
+
+import sys
+from optparse import OptionParser
+
+from LanguageSelector import FontConfig
+from gettext import gettext as _
+
+
+def main():
+    
+    def abort(msg=None):
+        " helper for a clean abort "
+        if not options.silent:
+            if msg:
+                print msg
+            print _("Aborting")
+        sys.exit(1)
+
+    usage = "usage: %prog [options]"
+    # init the option parser
+    parser = OptionParser(usage)
+    parser.add_option("-f", "--force", dest="force",
+                      action="store_true",
+                      help=_("Force even when a configuration exists"))
+    parser.add_option("-s", "--set", dest="lang",
+                      help=_("Set fontconfig voodoo for the selected "
+                             "language"))
+    parser.add_option("-a", "--auto", dest="auto",
+                      action="store_true",
+                      help=_("Guess a configuration based on the "
+                             "LANGUAGE environment. Sets the config to "
+                             "'none' if nothing suitable was found"))
+    parser.add_option("-l", "--list", dest="list",
+                      action="store_true",
+                      help=_("List the available fontconfig-voodoo configs"))
+    parser.add_option("-c", "--current", dest="show_current",
+                      action="store_true",
+                      help=_("Show the current fontconfig-voodoo config"))
+    parser.add_option("-r", "--remove-current", dest="remove_current",
+                      action="store_true",
+                      help=_("Remove the current fontconfig-voodoo config"))
+    parser.add_option("-q", "--quiet",
+                      action="store_true", dest="silent", default=False)
+
+    # check if we have arguments at all
+    if len(sys.argv[1:]) == 0:
+        parser.print_help()
+        sys.exit(0)
+
+    # parse them
+    (options, args) = parser.parse_args()
+
+    # do the work
+    fc = FontConfig.FontConfigHack()
+
+    if options.show_current:
+        try:
+            if options.silent:
+                print fc.getCurrentConfig()
+            else:
+                print "Current config: %s" % fc.getCurrentConfig()
+        except FontConfig.ExceptionUnconfigured:
+            print _("Unconfigured")
+        sys.exit(0)
+
+    if options.list:
+        print "\n".join(fc.getAvailableConfigs())
+        sys.exit(0)
+        
+    if options.remove_current:
+        fc.removeConfig()
+        sys.exit(0)
+
+    if not options.force:
+        try:
+            fc.getCurrentConfig()
+            # if this does not raise a "Unconfigured" exception, we
+            # abort here
+            abort(_("A configuration exists already. Use '--force' to "
+                    "overwrite it. "))
+        except FontConfig.ExceptionUnconfigured:
+            pass
+
+    if options.auto:
+        try:
+            fc.setConfigBasedOnLocale()
+        except FontConfig.ExceptionNoConfigForLocale:
+            abort(_("No fontconfig-voodoo configuration found for the "
+                    "current LANGUAGE"))
+
+    if options.lang:
+        try:
+            fc.setConfig(options.lang)
+        except FontConfig.ExceptionNoConfigForLocale:
+            abort(_("No fontconfig-voodoo configuration found for the "
+                    "selected locale"))
+
+    
+if __name__ == "__main__":
+    main()

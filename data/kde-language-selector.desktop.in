@@ -1,0 +1,17 @@
+[Desktop Entry]
+_Name=System Languages
+_Comment=Install and set system languages
+
+Exec=kcmshell4 language-selector
+Icon=preferences-desktop-locale
+Type=Service
+Encoding=UTF-8
+
+X-KDE-ServiceTypes=KCModule
+X-KDE-Library=kpythonpluginfactory
+X-KDE-ParentApp=kcontrol
+X-KDE-PluginKeyword=language-selector/language-selector.py
+X-KDE-System-Settings-Parent-Category=locale
+X-KDE-Weight=90
+X-DocPath=kcontrol/language/index.html
+X-Ubuntu-Gettext-Domain=language-selector

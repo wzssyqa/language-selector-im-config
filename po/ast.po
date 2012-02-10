@@ -1,0 +1,595 @@
+# Asturian translation for language-selector
+# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
+# This file is distributed under the same license as the language-selector package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: language-selector\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-24 13:55+0000\n"
+"PO-Revision-Date: 2010-09-24 17:23+0000\n"
+"Last-Translator: Iñigo Varela <malditoastur@gmail.com>\n"
+"Language-Team: Asturian <ast@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2010-10-05 09:20+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+"Language: ast\n"
+
+#. Hack for Chinese langpack split
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:47
+msgid "Chinese (simplified)"
+msgstr "Chinu (simplificáu)"
+
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:49
+msgid "Chinese (traditional)"
+msgstr "Chinu (tradicional)"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
+#: ../LanguageSelector/qt/QtLanguageSelector.py:98
+msgid "No language information available"
+msgstr "Nun hai información de llingua disponible"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
+#: ../LanguageSelector/qt/QtLanguageSelector.py:99
+msgid ""
+"The system does not have information about the available languages yet. Do "
+"you want to perform a network update to get them now? "
+msgstr ""
+"El sistema nun tien información sobro les llingües disponibles. ¿Deseya "
+"intentar una actualización na rede pa consiguila ahora? "
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
+#: ../LanguageSelector/qt/QtLanguageSelector.py:93
+msgid "_Update"
+msgstr "A_novar"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:307
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:345
+#: ../data/LanguageSelector.ui.h:23
+msgid "Language"
+msgstr "Llingua"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+msgid "Installed"
+msgstr "Instaláu"
+
+#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:383
+#, python-format
+msgid "%(INSTALL)d to install"
+msgid_plural "%(INSTALL)d to install"
+msgstr[0] "%(INSTALL)d a instalar"
+msgstr[1] "%(INSTALL)d a instalar"
+
+#. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:385
+#, python-format
+msgid "%(REMOVE)d to remove"
+msgid_plural "%(REMOVE)d to remove"
+msgstr[0] "%(REMOVE)d a desaniciar"
+msgstr[1] "%(REMOVE)d a desaniciar"
+
+#. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
+#, python-format
+msgid "%s, %s"
+msgstr "%s, %s"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:509
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:703
+#: ../LanguageSelector/qt/QtLanguageSelector.py:82
+#: ../LanguageSelector/qt/QtLanguageSelector.py:310
+#: ../check-language-support:52
+msgid "Software database is broken"
+msgstr "La base de datos del software ta frañada"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:510
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:704
+#: ../check-language-support:53
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"Nun ye dable instalar o desinstalar dengún programa. Por favor, use'l xestor "
+"de paquetes «Synaptic», o execute «sudo apt-get install -f» nuna terminal, "
+"pa correxir esti problema primero."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+msgid "Could not install the selected language support"
+msgstr "Nun pudo instalase la llingua escoyida"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:556
+msgid ""
+"This is perhaps a bug of this application. Please file a bug report at "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
+msgstr ""
+"Esto tal vez debase a un fallu na aplicación. Por favor, rellena un informe "
+"de fallu en https://bugs.launchpad.net/ubuntu/+source/language-"
+"selector/+filebug"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+msgid "Could not install the full language support"
+msgstr "Nun pudo instalase el sofitu completu pa esta llingua"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:581
+msgid ""
+"Usually this is related to an error in your software archive or software "
+"manager. Check your software preferences in the System > Administration menu."
+msgstr ""
+"Normalmente ta rellacionáu con un fallu nel to repositoriu o xestor de "
+"software. Comprueba les preferencies del software nel menú Sistema > "
+"Alministración."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:660
+#: ../LanguageSelector/qt/QtLanguageSelector.py:164
+msgid "The language support is not installed completely"
+msgstr "El sofitu pa la llingua nun ta instaláu ensembre"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:661
+#: ../LanguageSelector/qt/QtLanguageSelector.py:165
+msgid ""
+"Some translations or writing aids available for your chosen languages are "
+"not installed yet. Do you want to install them now?"
+msgstr ""
+"Nun tán instalaes toles traducciones o aides a la escritura disponibles pa "
+"les llingües seleicionaes. ¿Quier instalales agora?"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:664
+#: ../LanguageSelector/qt/QtLanguageSelector.py:94
+#: ../LanguageSelector/qt/QtLanguageSelector.py:160
+msgid "_Remind Me Later"
+msgstr "_Remembrámelo más sero"
+
+#. FIXME: add "details"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:665
+#: ../LanguageSelector/qt/QtLanguageSelector.py:159
+msgid "_Install"
+msgstr "_Instalar"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
+msgid "Details"
+msgstr "Detalles"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:57
+msgid "Uninstall"
+msgstr "Desinstalar"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:58
+msgid "Select language to uninstall:"
+msgstr "Seleicione la llingua a desinstalar:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:65
+msgid "Language Selector"
+msgstr "Seleutor de Llingua"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:83
+#: ../LanguageSelector/qt/QtLanguageSelector.py:311
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"Nun ye dable instalar o desinstalar dengún programa. Por favor, use "
+"primero'l xestor de paquetes «Adept» o execute «sudo apt-get install -f» "
+"nuna terminal pa correxir esti problema."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+msgid "Default system language:"
+msgstr "Llingua predeterminada del sistema:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+msgid "Set System Language"
+msgstr "Afitar la llingua del sistema"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+msgid "Keyboard input method:"
+msgstr "Métodu d'introducción de tecláu:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:122
+#: ../LanguageSelector/qt/QtLanguageSelector.py:125
+#: ../data/LanguageSelector.ui.h:13
+msgid "Cancel"
+msgstr "Encaboxar"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+msgid "Select language to install:"
+msgstr "Seleicione la llingua a instalar:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:124
+msgid "Install"
+msgstr "Instalar"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:213
+msgid "Already installed"
+msgstr "Yá instaláu"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:217
+msgid "Partially Installed"
+msgstr "Parcialmente instaláu"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:221
+msgid "Not installed"
+msgstr "Non instaláu"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+#, python-format
+msgid "Default system Language now set to %s."
+msgstr "La llingua predeterminada del sistema ye agora %s."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+msgid "Language Set"
+msgstr "Llingua afitada"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+#, python-format
+msgid ""
+"Translations and support have now been installed for %s.  Select them from "
+"the Add Language button."
+msgstr ""
+"Instaláronse les traducciones y el sofitu pa %s. Seleiciónelos dende'l botón "
+"«Amestar llingua»."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+msgid "Language Installed"
+msgstr "Llingua instalada"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+#, python-format
+msgid "Translations and support have now been uninstalled for %s."
+msgstr "Desinstaláronse les traducciones y el sofitu pa %s."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+msgid "Language Uninstalled"
+msgstr "Llingua desinstalada"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+msgid "Failed to set system language."
+msgstr "Fallu al afitar la llingua del sistema."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+msgid "Language Not Set"
+msgstr "Llingua non afitada"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+msgid "Please run this software with administrative rights."
+msgstr "Por favor, execute esti software con privilexos d'alministración."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+msgid "Not Root User"
+msgstr "Nun ye l'usuariu alministrador"
+
+#: ../data/LanguageSelector.ui.h:1
+msgid "<b>Example</b>"
+msgstr "<b>Exemplu</b>"
+
+#: ../data/LanguageSelector.ui.h:2
+msgid ""
+"<big><b>Checking available language support</b></big>\n"
+"\n"
+"The availability of translations or writing aids can differ between "
+"languages."
+msgstr ""
+"<big><b>Comprobando'l sofitu disponible de llingües</b></big>\n"
+"\n"
+"La disponibilidá de tornes o aides a la escritura cimbla d'un idioma a otru."
+
+#: ../data/LanguageSelector.ui.h:5
+msgid "<small>Changes take effect next time you log in.</small>"
+msgstr ""
+"<small>Los cambeos van tener efeutu la próxima vegada qu'entres.</small>"
+
+#: ../data/LanguageSelector.ui.h:6
+msgid ""
+"<small>Drag languages to arrange them in order of preference.\n"
+"Changes take effect next time you log in.</small>"
+msgstr ""
+"<small>Arrastre llingües pa poneles n'orde de preferencia.\n"
+"Los cambeos tendrán efeutu la próxima vegada qu'acceda.</small>"
+
+#: ../data/LanguageSelector.ui.h:8
+msgid ""
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
+msgstr ""
+"<small>Usar la mesma llingua nel aniciu y la pantalla d'accesu.</small>"
+
+#: ../data/LanguageSelector.ui.h:9
+msgid ""
+"<small>Uses the same text format choice for startup and the login "
+"screen.</small>"
+msgstr ""
+"<small>Usa la mesma eleición de formatu de testu pal aniciu y la pantalla "
+"d'entrada.</small>"
+
+#: ../data/LanguageSelector.ui.h:10
+msgid ""
+"Additional fonts for this language which might be of general interest, e.g. "
+"decorative fonts for printing documents."
+msgstr ""
+"Pue ser d'interés xeneral l'usu de tipografíes adicionales pa esta llingua; "
+"por exemplu, tipografíes decoratives pa imprentar documentos."
+
+#: ../data/LanguageSelector.ui.h:11
+msgid "Apply Changes"
+msgstr "Aplicar Cambeos"
+
+#: ../data/LanguageSelector.ui.h:12
+msgid "Apply System-Wide..."
+msgstr "Aplicar a tol sistema..."
+
+#: ../data/LanguageSelector.ui.h:14
+msgid "Components:"
+msgstr "Componentes:"
+
+#: ../data/LanguageSelector.ui.h:15
+msgid "Currency:"
+msgstr "Moneda:"
+
+#: ../data/LanguageSelector.ui.h:16
+msgid "Date:"
+msgstr "Data:"
+
+#: ../data/LanguageSelector.ui.h:17
+msgid "Display numbers, dates and currency amounts in the usual format for:"
+msgstr ""
+"Amosar númberos, feches y cantidaes monetaries nel formatu habitual pa:"
+
+#: ../data/LanguageSelector.ui.h:18
+msgid "Extra fonts"
+msgstr "Fontes Estra"
+
+#: ../data/LanguageSelector.ui.h:19
+msgid "Input methods"
+msgstr "Métodos d'entrada"
+
+#: ../data/LanguageSelector.ui.h:20
+msgid "Install / Remove Languages..."
+msgstr "Instalar / Desaniciar Llingües..."
+
+#: ../data/LanguageSelector.ui.h:21
+msgid "Installed Languages"
+msgstr "Llingües Instalaes"
+
+#: ../data/LanguageSelector.ui.h:22
+msgid "Keyboard input method system:"
+msgstr "Sistema de métodu d'entrada de tecláu:"
+
+#: ../data/LanguageSelector.ui.h:24
+msgid "Language & Text"
+msgstr "Llingua y testu"
+
+#: ../data/LanguageSelector.ui.h:25
+msgid "Language for menus and windows:"
+msgstr "Llingua pa los menús y ventanes:"
+
+#: ../data/LanguageSelector.ui.h:26
+msgid "Number:"
+msgstr "Númberu:"
+
+#: ../data/LanguageSelector.ui.h:27
+msgid "Spellchecking and writing aids"
+msgstr "Correutor d'ortografía y aides a la escritura"
+
+#: ../data/LanguageSelector.ui.h:28
+msgid "Text"
+msgstr "Testu"
+
+#: ../data/LanguageSelector.ui.h:29
+msgid "Translations"
+msgstr "Tornes"
+
+#: ../data/LanguageSelector.ui.h:30
+msgid "Translations for your desktop."
+msgstr "Tornes pal so escritoriu."
+
+#: ../data/LanguageSelector.ui.h:31
+msgid ""
+"When a language is installed, individual users can choose it in their "
+"Language settings."
+msgstr ""
+"Cuando una llingua tea instalada, cada usuariu puede escoyer les sos propies "
+"preferencies de llingua."
+
+#: ../data/LanguageSelector.ui.h:32
+msgid ""
+"Word lists, dictionaries, thesauruses, etc. which can help typing by "
+"highlighting, correcting or suggesting words."
+msgstr ""
+"Llistes de pallabres, diccionarios, thesauros, etc. que-y aiden na escritura "
+"resaltando, corrixendo o suxiriendo pallabres."
+
+#: ../data/language-selector.desktop.in.h:1
+#: ../data/qt-language-selector.desktop.in.h:1
+msgid "Configure multiple and native language support on your system"
+msgstr "Configurar soporte múltiple y nativu de llingües pal so sistema"
+
+#: ../data/language-selector.desktop.in.h:2
+#: ../data/qt-language-selector.desktop.in.h:2
+msgid "Language Support"
+msgstr "Seleutor de llingües"
+
+#. Name
+#: ..//data/incomplete-language-support-gnome.note.in:5
+#: ..//data/incomplete-language-support-qt.note.in:5
+msgid "Incomplete Language Support"
+msgstr "Sofitu a llingua incompletu"
+
+#. Description
+#: ..//data/incomplete-language-support-gnome.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
+msgstr ""
+"El sofitu a llingües pa la so llingua seleicionada paez incompletu. Pue "
+"instalar los componentes que falten calcando en \"executar esta aición "
+"agora\" y seguir les instrucciones. Requierse tar coneutáu a Internet. Si "
+"deseya facer esto más sero, use Sistema->Alministración -> Seleutor de "
+"llingües."
+
+#. Description
+#: ..//data/incomplete-language-support-qt.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
+msgstr ""
+"Los ficheros de sofitu pa llingües pa la so llingua seleicionada, paecen tar "
+"incompletos. Pue instalar los componentes que falten calcando en \"executar "
+"esta aición agora\" y seguir les instrucciones. Requierse tar coneutáu a "
+"Internet. Si deseya facer esto más sero, use «Opciones del sistema -> "
+"Rexones ya llingua»."
+
+#. Name
+#: ../data/restart_session_required.note.in:5
+msgid "Session Restart Required"
+msgstr "Requierse reaniciar la sesión"
+
+#. Description
+#: ../data/restart_session_required.note.in:6
+msgid "The new language settings will take effect once you have logged out."
+msgstr ""
+"Les nueves opciones de llingua tendrán efeutu cuando tenga colao d'esta "
+"sesión."
+
+#: ../gnome-language-selector:25
+msgid "don't verify installed language support"
+msgstr "non verificar sofitu téunicu de llingües instalaes"
+
+#: ../gnome-language-selector:28 ../check-language-support:22
+msgid "alternative datadir"
+msgstr "datadir alternativu"
+
+#: ../fontconfig-voodoo:18
+msgid "Aborting"
+msgstr "Albortando"
+
+#: ../fontconfig-voodoo:26
+msgid "Force even when a configuration exists"
+msgstr "Forciar inclusu cuando esista una configuración"
+
+#: ../fontconfig-voodoo:28
+msgid "Set fontconfig voodoo for the selected language"
+msgstr "Afitar fontconfig-voodoo pa la llingua seleicionada"
+
+#: ../fontconfig-voodoo:32
+msgid ""
+"Guess a configuration based on the LANGUAGE environment. Sets the config to "
+"'none' if nothing suitable was found"
+msgstr ""
+"Prebar una configuración sofitada na variable d'entornu LANGUAGE. Afitar la "
+"configuración a «none» si nun s'alcuentra res más afayaízo."
+
+#: ../fontconfig-voodoo:37
+msgid "List the available fontconfig-voodoo configs"
+msgstr "Llistar les configuraciones disponibles de fontconfig-voodoo"
+
+#: ../fontconfig-voodoo:40
+msgid "Show the current fontconfig-voodoo config"
+msgstr "Amosar la configuración actual de fontconfig-voodoo"
+
+#: ../fontconfig-voodoo:43
+msgid "Remove the current fontconfig-voodoo config"
+msgstr "Desaniciar la configuración actual de fontconfig-voodoo"
+
+#: ../fontconfig-voodoo:65
+msgid "Unconfigured"
+msgstr "Non configuráu"
+
+#: ../fontconfig-voodoo:77
+msgid "A configuration exists already. Use '--force' to overwrite it. "
+msgstr "Yá esiste una configuración. Use «--force» pa sobroscribila. "
+
+#: ../fontconfig-voodoo:96
+msgid "No fontconfig-voodoo configuration found for the selected locale"
+msgstr ""
+"Nun pudo alcontrase denguna configuración de fontconfig-voodoo pa la "
+"llocalización seleicionada"
+
+#: ../check-language-support:19
+msgid "target language code"
+msgstr "Códigu de la llingua de destín"
+
+#: ../check-language-support:23
+msgid "check for the given package(s) only -- separate packagenames by comma"
+msgstr ""
+"comprobar namái los paquetes indicaos -- separtar los nomes de paquetes con "
+"una coma"
+
+#: ../check-language-support:25
+msgid "check all available languages"
+msgstr "Comprobar toles llingües disponibles"
+
+#: ../check-language-support:28
+msgid "show installed packages as well as missing ones"
+msgstr "Amosar los paquetes instalaos, y los que falten"
+
+#~ msgid "The list of available languages on the system has been updated."
+#~ msgstr "Anovóse la llista de llingües disponibles nel sistema."
+
+#~ msgid ""
+#~ "This will set the system environment like shown below and will also affect "
+#~ "the preferred paper format and other territory specific settings.\n"
+#~ "If you want to display the desktop in a different language than this, please "
+#~ "select it in the \"Language\" tab.\n"
+#~ "Hence you should set this to a sensible value for the territory you are "
+#~ "located in."
+#~ msgstr ""
+#~ "Esto va afitar l'entornu del sistema como s'amuesa de siguío, y tamién va "
+#~ "afeutar al formatu de papel predetermináu asina como a otres opciones "
+#~ "específiques d'un territoriu concretu.\n"
+#~ "Si quies ver l'escritoriu nuna llingua distinta a esta, escuéyili na "
+#~ "llingüeta «Llingua».\n"
+#~ "Por ello, tendrás d'afitalu a un valor afayadizu pal territoriu nel que "
+#~ "t'atopes."
+
+#~ msgid ""
+#~ "This setting only affects the language your desktop and applications are "
+#~ "displayed in. It does not set the system environment, like currency or date "
+#~ "format settings. For that, use the settings in the Text tab.\n"
+#~ "The order of the values displayed here decides which translations to use for "
+#~ "your desktop. If translations for the first language are not available, the "
+#~ "next one in this list will be tried. The last entry of this list is always "
+#~ "\"English\".\n"
+#~ "Every entry below \"English\" will be ignored."
+#~ msgstr ""
+#~ "Esta opción namái afecta a la llingua nel que s'amuesen l'escritoriu y les "
+#~ "aplicaciones. Nun afita l'entornu del sistema como les opciones de moneda o "
+#~ "de formatu de feches. Pa ello, usa les opciones de la llingüeta Testu.\n"
+#~ "L'orde de los valores qu'equí s'amuesen determina qué traducciones va usar "
+#~ "pal to escritoriu. Si nun hai traducciones disponibles pal primer idioma, va "
+#~ "intentase col viniente de la llista. La cabera entrada de la llista siempres "
+#~ "ye «Inglés».Toles entraes asitiaes debaxo de «Inglés» van inorase."
+
+#~ msgid ""
+#~ "If you need to type in languages, which require more complex input methods "
+#~ "than just a simple key to letter mapping, you may want to enable this "
+#~ "function.\n"
+#~ "For example, you will need this function for typing Chinese, Japanese, "
+#~ "Korean or Vietnamese.\n"
+#~ "The recommended value for Ubuntu is \"ibus\".\n"
+#~ "If you want to use alternative input method systems, install the "
+#~ "corresponding packages first and then choose the desired system here."
+#~ msgstr ""
+#~ "Si necesites escribir en llingües que necesiten métodos d'entrada más "
+#~ "complexos qu'una simple correspondencia ente una tecla y una lletra, puede "
+#~ "que quieras activar esta función.\n"
+#~ "Por exemplu, vas necesitar esta función pa teclear en chinu, xaponés, "
+#~ "coreanu o vietnamita.\n"
+#~ "El valor recomendáu n'Ubuntu ye «ibus».\n"
+#~ "Si quies usar sistemes alternativos de métodos d'entrada, instala primero "
+#~ "los paquetes correspondientes y llueu esbilla equí el sistema deseáu."
